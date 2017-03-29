@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Estate Settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estatename</th>
+      <th>Abuseemailtoestateowner</th>
+      <th>Denyanonymous</th>
+      <th>Resethomeonteleport</th>
+      <th>Fixedsun</th>
+      <th>Denytransacted</th>
+      <th>Blockdwell</th>
+      <th>Denyidentified</th>
+      <th>Allowvoice</th>
+      <th>Useglobaltime</th>
+      <th>Pricepermeter</th>
+      <th>Taxfree</th>
+      <th>Allowdirectteleport</th>
+      <th>Redirectgridx</th>
+      <th>Redirectgridy</th>
+      <th>Parentestateid</th>
+      <th>Sunposition</th>
+      <th>Estateskipscripts</th>
+      <th>Billablefactor</th>
+      <th>Publicaccess</th>
+      <th>Abuseemail</th>
+      <th>Estateowner</th>
+      <th>Denyminors</th>
+      <th>Allowlandmark</th>
+      <th>Allowparcelchanges</th>
+      <th>Allowsethome</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estate_settings.each do |estate_setting| %>
+      <tr>
+        <td><%= estate_setting.EstateName %></td>
+        <td><%= estate_setting.AbuseEmailToEstateOwner %></td>
+        <td><%= estate_setting.DenyAnonymous %></td>
+        <td><%= estate_setting.ResetHomeOnTeleport %></td>
+        <td><%= estate_setting.FixedSun %></td>
+        <td><%= estate_setting.DenyTransacted %></td>
+        <td><%= estate_setting.BlockDwell %></td>
+        <td><%= estate_setting.DenyIdentified %></td>
+        <td><%= estate_setting.AllowVoice %></td>
+        <td><%= estate_setting.UseGlobalTime %></td>
+        <td><%= estate_setting.PricePerMeter %></td>
+        <td><%= estate_setting.TaxFree %></td>
+        <td><%= estate_setting.AllowDirectTeleport %></td>
+        <td><%= estate_setting.RedirectGridX %></td>
+        <td><%= estate_setting.RedirectGridY %></td>
+        <td><%= estate_setting.ParentEstateID %></td>
+        <td><%= estate_setting.SunPosition %></td>
+        <td><%= estate_setting.EstateSkipScripts %></td>
+        <td><%= estate_setting.BillableFactor %></td>
+        <td><%= estate_setting.PublicAccess %></td>
+        <td><%= estate_setting.AbuseEmail %></td>
+        <td><%= estate_setting.EstateOwner %></td>
+        <td><%= estate_setting.DenyMinors %></td>
+        <td><%= estate_setting.AllowLandmark %></td>
+        <td><%= estate_setting.AllowParcelChanges %></td>
+        <td><%= estate_setting.AllowSetHome %></td>
+        <td><%= link_to 'Show', estate_setting %></td>
+        <td><%= link_to 'Edit', edit_estate_setting_path(estate_setting) %></td>
+        <td><%= link_to 'Destroy', estate_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estate Setting', new_estate_setting_path %>

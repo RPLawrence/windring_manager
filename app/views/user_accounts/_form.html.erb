@@ -1,0 +1,72 @@
+<%= form_for(user_account) do |f| %>
+  <% if user_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_account.errors.count, "error") %> prohibited this user_account from being saved:</h2>
+
+      <ul>
+      <% user_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PrincipalID %>
+    <%= f.text_field :PrincipalID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ScopeID %>
+    <%= f.text_field :ScopeID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FirstName %>
+    <%= f.text_field :FirstName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastName %>
+    <%= f.text_field :LastName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Email %>
+    <%= f.text_field :Email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ServiceURLs %>
+    <%= f.text_area :ServiceURLs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Created %>
+    <%= f.number_field :Created %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLevel %>
+    <%= f.number_field :UserLevel %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserFlags %>
+    <%= f.number_field :UserFlags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserTitle %>
+    <%= f.text_field :UserTitle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %>
+    <%= f.number_field :active %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

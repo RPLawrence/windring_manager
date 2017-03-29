@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Useruuid:</strong>
+  <%= @profile_note.useruuid %>
+</p>
+
+<p>
+  <strong>Targetuuid:</strong>
+  <%= @profile_note.targetuuid %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @profile_note.notes %>
+</p>
+
+<%= link_to 'Edit', edit_profile_note_path(@profile_note) %> |
+<%= link_to 'Back', profile_notes_path %>

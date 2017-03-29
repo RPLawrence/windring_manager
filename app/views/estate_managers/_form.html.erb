@@ -1,0 +1,27 @@
+<%= form_for(estate_manager) do |f| %>
+  <% if estate_manager.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estate_manager.errors.count, "error") %> prohibited this estate_manager from being saved:</h2>
+
+      <ul>
+      <% estate_manager.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EstateID %>
+    <%= f.number_field :EstateID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :uuid %>
+    <%= f.text_field :uuid %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

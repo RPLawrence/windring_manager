@@ -1,0 +1,1 @@
+json.partial! "os_groups_rolememberships/os_groups_rolemembership", os_groups_rolemembership: @os_groups_rolemembership

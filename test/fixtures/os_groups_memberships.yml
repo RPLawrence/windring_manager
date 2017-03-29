@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GroupID: MyString
+  PrincipalID: MyString
+  SelectedRoleID: MyString
+  Contribution: 1
+  ListInProfile: 1
+  AcceptNotices: 1
+  AccessToken: MyString
+
+two:
+  GroupID: MyString
+  PrincipalID: MyString
+  SelectedRoleID: MyString
+  Contribution: 1
+  ListInProfile: 1
+  AcceptNotices: 1
+  AccessToken: MyString

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LandUUID: MyString
+  AccessUUID: MyString
+  Flags: 1
+  Expires: 1
+
+two:
+  LandUUID: MyString
+  AccessUUID: MyString
+  Flags: 1
+  Expires: 1

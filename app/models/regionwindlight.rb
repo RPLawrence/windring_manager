@@ -1,0 +1,2 @@
+class Regionwindlight < ApplicationRecord
+end

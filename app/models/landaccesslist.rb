@@ -1,0 +1,2 @@
+class Landaccesslist < ApplicationRecord
+end

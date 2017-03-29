@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profile Settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imviaemail</th>
+      <th>Visible</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profile_settings.each do |profile_setting| %>
+      <tr>
+        <td><%= profile_setting.imviaemail %></td>
+        <td><%= profile_setting.visible %></td>
+        <td><%= profile_setting.email %></td>
+        <td><%= link_to 'Show', profile_setting %></td>
+        <td><%= link_to 'Edit', edit_profile_setting_path(profile_setting) %></td>
+        <td><%= link_to 'Destroy', profile_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profile Setting', new_profile_setting_path %>

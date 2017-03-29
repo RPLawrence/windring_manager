@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Landuuid:</strong>
+  <%= @landaccesslist.LandUUID %>
+</p>
+
+<p>
+  <strong>Accessuuid:</strong>
+  <%= @landaccesslist.AccessUUID %>
+</p>
+
+<p>
+  <strong>Flags:</strong>
+  <%= @landaccesslist.Flags %>
+</p>
+
+<p>
+  <strong>Expires:</strong>
+  <%= @landaccesslist.Expires %>
+</p>
+
+<%= link_to 'Edit', edit_landaccesslist_path(@landaccesslist) %> |
+<%= link_to 'Back', landaccesslists_path %>

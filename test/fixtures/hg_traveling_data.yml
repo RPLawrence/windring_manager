@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UserID: MyString
+  GridExternalName: MyString
+  ServiceToken: MyString
+  ClientIPAddress: MyString
+  MyIPAddress: MyString
+  TMStamp: 2017-03-29 17:44:21
+
+two:
+  UserID: MyString
+  GridExternalName: MyString
+  ServiceToken: MyString
+  ClientIPAddress: MyString
+  MyIPAddress: MyString
+  TMStamp: 2017-03-29 17:44:21

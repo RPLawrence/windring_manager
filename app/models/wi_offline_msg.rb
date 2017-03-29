@@ -1,0 +1,2 @@
+class WiOfflineMsg < ApplicationRecord
+end

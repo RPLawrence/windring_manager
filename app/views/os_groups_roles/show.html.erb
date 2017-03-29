@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Groupid:</strong>
+  <%= @os_groups_role.GroupID %>
+</p>
+
+<p>
+  <strong>Roleid:</strong>
+  <%= @os_groups_role.RoleID %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @os_groups_role.Name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @os_groups_role.Description %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @os_groups_role.Title %>
+</p>
+
+<p>
+  <strong>Powers:</strong>
+  <%= @os_groups_role.Powers %>
+</p>
+
+<%= link_to 'Edit', edit_os_groups_role_path(@os_groups_role) %> |
+<%= link_to 'Back', os_groups_roles_path %>

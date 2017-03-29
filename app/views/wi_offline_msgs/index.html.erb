@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wi Offline Msgs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uuid</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wi_offline_msgs.each do |wi_offline_msg| %>
+      <tr>
+        <td><%= wi_offline_msg.uuid %></td>
+        <td><%= wi_offline_msg.message %></td>
+        <td><%= link_to 'Show', wi_offline_msg %></td>
+        <td><%= link_to 'Edit', edit_wi_offline_msg_path(wi_offline_msg) %></td>
+        <td><%= link_to 'Destroy', wi_offline_msg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wi Offline Msg', new_wi_offline_msg_path %>

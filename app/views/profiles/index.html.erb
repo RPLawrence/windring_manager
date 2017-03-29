@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profilepartner</th>
+      <th>Profileallowpublish</th>
+      <th>Profilematurepublish</th>
+      <th>Profileurl</th>
+      <th>Profilewanttomask</th>
+      <th>Profilewanttotext</th>
+      <th>Profileskillsmask</th>
+      <th>Profileskillstext</th>
+      <th>Profilelanguages</th>
+      <th>Profileimage</th>
+      <th>Profileabouttext</th>
+      <th>Profilefirstimage</th>
+      <th>Profilefirsttext</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profiles.each do |profile| %>
+      <tr>
+        <td><%= profile.profilePartner %></td>
+        <td><%= profile.profileAllowPublish %></td>
+        <td><%= profile.profileMaturePublish %></td>
+        <td><%= profile.profileURL %></td>
+        <td><%= profile.profileWantToMask %></td>
+        <td><%= profile.profileWantToText %></td>
+        <td><%= profile.profileSkillsMask %></td>
+        <td><%= profile.profileSkillsText %></td>
+        <td><%= profile.profileLanguages %></td>
+        <td><%= profile.profileImage %></td>
+        <td><%= profile.profileAboutText %></td>
+        <td><%= profile.profileFirstImage %></td>
+        <td><%= profile.profileFirstText %></td>
+        <td><%= link_to 'Show', profile %></td>
+        <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profile', new_profile_path %>

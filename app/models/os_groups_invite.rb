@@ -1,0 +1,2 @@
+class OsGroupsInvite < ApplicationRecord
+end

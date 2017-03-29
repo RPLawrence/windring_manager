@@ -1,0 +1,2 @@
+json.extract! primshape, :id, :Shape, :ScaleX, :ScaleY, :ScaleZ, :PCode, :PathBegin, :PathEnd, :PathScaleX, :PathScaleY, :PathShearX, :PathShearY, :PathSkew, :PathCurve, :PathRadiusOffset, :PathRevolutions, :PathTaperX, :PathTaperY, :PathTwist, :PathTwistBegin, :ProfileBegin, :ProfileEnd, :ProfileCurve, :ProfileHollow, :State, :Texture, :ExtraParams, :Media, :LastAttachPoint, :created_at, :updated_at
+json.url primshape_url(primshape, format: :json)

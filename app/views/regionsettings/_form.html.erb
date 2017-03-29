@@ -1,0 +1,237 @@
+<%= form_for(regionsetting) do |f| %>
+  <% if regionsetting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(regionsetting.errors.count, "error") %> prohibited this regionsetting from being saved:</h2>
+
+      <ul>
+      <% regionsetting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :block_terraform %>
+    <%= f.number_field :block_terraform %>
+  </div>
+
+  <div class="field">
+    <%= f.label :block_fly %>
+    <%= f.number_field :block_fly %>
+  </div>
+
+  <div class="field">
+    <%= f.label :allow_damage %>
+    <%= f.number_field :allow_damage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :restrict_pushing %>
+    <%= f.number_field :restrict_pushing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :allow_land_resell %>
+    <%= f.number_field :allow_land_resell %>
+  </div>
+
+  <div class="field">
+    <%= f.label :allow_land_join_divide %>
+    <%= f.number_field :allow_land_join_divide %>
+  </div>
+
+  <div class="field">
+    <%= f.label :block_show_in_search %>
+    <%= f.number_field :block_show_in_search %>
+  </div>
+
+  <div class="field">
+    <%= f.label :agent_limit %>
+    <%= f.number_field :agent_limit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :object_bonus %>
+    <%= f.text_field :object_bonus %>
+  </div>
+
+  <div class="field">
+    <%= f.label :maturity %>
+    <%= f.number_field :maturity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :disable_scripts %>
+    <%= f.number_field :disable_scripts %>
+  </div>
+
+  <div class="field">
+    <%= f.label :disable_collisions %>
+    <%= f.number_field :disable_collisions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :disable_physics %>
+    <%= f.number_field :disable_physics %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain_texture_1 %>
+    <%= f.text_field :terrain_texture_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain_texture_2 %>
+    <%= f.text_field :terrain_texture_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain_texture_3 %>
+    <%= f.text_field :terrain_texture_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain_texture_4 %>
+    <%= f.text_field :terrain_texture_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_1_nw %>
+    <%= f.text_field :elevation_1_nw %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_2_nw %>
+    <%= f.text_field :elevation_2_nw %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_1_ne %>
+    <%= f.text_field :elevation_1_ne %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_2_ne %>
+    <%= f.text_field :elevation_2_ne %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_1_se %>
+    <%= f.text_field :elevation_1_se %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_2_se %>
+    <%= f.text_field :elevation_2_se %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_1_sw %>
+    <%= f.text_field :elevation_1_sw %>
+  </div>
+
+  <div class="field">
+    <%= f.label :elevation_2_sw %>
+    <%= f.text_field :elevation_2_sw %>
+  </div>
+
+  <div class="field">
+    <%= f.label :water_height %>
+    <%= f.text_field :water_height %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain_raise_limit %>
+    <%= f.text_field :terrain_raise_limit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :terrain_lower_limit %>
+    <%= f.text_field :terrain_lower_limit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :use_estate_sun %>
+    <%= f.number_field :use_estate_sun %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fixed_sun %>
+    <%= f.number_field :fixed_sun %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_position %>
+    <%= f.text_field :sun_position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :covenant %>
+    <%= f.text_field :covenant %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Sandbox %>
+    <%= f.number_field :Sandbox %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sunvectorx %>
+    <%= f.text_field :sunvectorx %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sunvectory %>
+    <%= f.text_field :sunvectory %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sunvectorz %>
+    <%= f.text_field :sunvectorz %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loaded_creation_id %>
+    <%= f.text_field :loaded_creation_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loaded_creation_datetime %>
+    <%= f.number_field :loaded_creation_datetime %>
+  </div>
+
+  <div class="field">
+    <%= f.label :map_tile_ID %>
+    <%= f.text_field :map_tile_ID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TelehubObject %>
+    <%= f.text_field :TelehubObject %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parcel_tile_ID %>
+    <%= f.text_field :parcel_tile_ID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :covenant_datetime %>
+    <%= f.number_field :covenant_datetime %>
+  </div>
+
+  <div class="field">
+    <%= f.label :block_search %>
+    <%= f.number_field :block_search %>
+  </div>
+
+  <div class="field">
+    <%= f.label :casino %>
+    <%= f.number_field :casino %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

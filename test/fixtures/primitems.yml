@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  invType: 1
+  assetType: 1
+  name: MyString
+  description: MyString
+  creationDate: 
+  nextPermissions: 1
+  currentPermissions: 1
+  basePermissions: 1
+  everyonePermissions: 1
+  groupPermissions: 1
+  flags: 1
+  primID: MyString
+  assetID: MyString
+  parentFolderID: MyString
+  CreatorID: MyString
+  ownerID: MyString
+  groupID: MyString
+  lastOwnerID: MyString
+
+two:
+  invType: 1
+  assetType: 1
+  name: MyString
+  description: MyString
+  creationDate: 
+  nextPermissions: 1
+  currentPermissions: 1
+  basePermissions: 1
+  everyonePermissions: 1
+  groupPermissions: 1
+  flags: 1
+  primID: MyString
+  assetID: MyString
+  parentFolderID: MyString
+  CreatorID: MyString
+  ownerID: MyString
+  groupID: MyString
+  lastOwnerID: MyString

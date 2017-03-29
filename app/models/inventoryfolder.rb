@@ -1,0 +1,2 @@
+class Inventoryfolder < ApplicationRecord
+end

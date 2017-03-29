@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Estate Managers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estateid</th>
+      <th>Uuid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estate_managers.each do |estate_manager| %>
+      <tr>
+        <td><%= estate_manager.EstateID %></td>
+        <td><%= estate_manager.uuid %></td>
+        <td><%= link_to 'Show', estate_manager %></td>
+        <td><%= link_to 'Edit', edit_estate_manager_path(estate_manager) %></td>
+        <td><%= link_to 'Destroy', estate_manager, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estate Manager', new_estate_manager_path %>

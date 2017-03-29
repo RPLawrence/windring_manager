@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PrincipalID: MyString
+  ScopeID: MyString
+  FirstName: MyString
+  LastName: MyString
+  Email: MyString
+  ServiceURLs: MyText
+  Created: 1
+  UserLevel: 1
+  UserFlags: 1
+  UserTitle: MyString
+  active: 1
+
+two:
+  PrincipalID: MyString
+  ScopeID: MyString
+  FirstName: MyString
+  LastName: MyString
+  Email: MyString
+  ServiceURLs: MyText
+  Created: 1
+  UserLevel: 1
+  UserFlags: 1
+  UserTitle: MyString
+  active: 1

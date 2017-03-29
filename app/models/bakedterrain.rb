@@ -1,0 +1,2 @@
+class Bakedterrain < ApplicationRecord
+end

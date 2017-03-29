@@ -1,0 +1,482 @@
+<%= form_for(prim) do |f| %>
+  <% if prim.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prim.errors.count, "error") %> prohibited this prim from being saved:</h2>
+
+      <ul>
+      <% prim.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CreationDate %>
+    <%= f.number_field :CreationDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Text %>
+    <%= f.text_field :Text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Description %>
+    <%= f.text_field :Description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitName %>
+    <%= f.text_field :SitName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TouchName %>
+    <%= f.text_field :TouchName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ObjectFlags %>
+    <%= f.number_field :ObjectFlags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OwnerMask %>
+    <%= f.number_field :OwnerMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :NextOwnerMask %>
+    <%= f.number_field :NextOwnerMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupMask %>
+    <%= f.number_field :GroupMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :EveryoneMask %>
+    <%= f.number_field :EveryoneMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :BaseMask %>
+    <%= f.number_field :BaseMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PositionX %>
+    <%= f.text_field :PositionX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PositionY %>
+    <%= f.text_field :PositionY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PositionZ %>
+    <%= f.text_field :PositionZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupPositionX %>
+    <%= f.text_field :GroupPositionX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupPositionY %>
+    <%= f.text_field :GroupPositionY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupPositionZ %>
+    <%= f.text_field :GroupPositionZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :VelocityX %>
+    <%= f.text_field :VelocityX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :VelocityY %>
+    <%= f.text_field :VelocityY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :VelocityZ %>
+    <%= f.text_field :VelocityZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AngularVelocityX %>
+    <%= f.text_field :AngularVelocityX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AngularVelocityY %>
+    <%= f.text_field :AngularVelocityY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AngularVelocityZ %>
+    <%= f.text_field :AngularVelocityZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AccelerationX %>
+    <%= f.text_field :AccelerationX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AccelerationY %>
+    <%= f.text_field :AccelerationY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AccelerationZ %>
+    <%= f.text_field :AccelerationZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RotationX %>
+    <%= f.text_field :RotationX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RotationY %>
+    <%= f.text_field :RotationY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RotationZ %>
+    <%= f.text_field :RotationZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RotationW %>
+    <%= f.text_field :RotationW %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOffsetX %>
+    <%= f.text_field :SitTargetOffsetX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOffsetY %>
+    <%= f.text_field :SitTargetOffsetY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOffsetZ %>
+    <%= f.text_field :SitTargetOffsetZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOrientW %>
+    <%= f.text_field :SitTargetOrientW %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOrientX %>
+    <%= f.text_field :SitTargetOrientX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOrientY %>
+    <%= f.text_field :SitTargetOrientY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SitTargetOrientZ %>
+    <%= f.text_field :SitTargetOrientZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RegionUUID %>
+    <%= f.text_field :RegionUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CreatorID %>
+    <%= f.text_field :CreatorID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OwnerID %>
+    <%= f.text_field :OwnerID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupID %>
+    <%= f.text_field :GroupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastOwnerID %>
+    <%= f.text_field :LastOwnerID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SceneGroupID %>
+    <%= f.text_field :SceneGroupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PayPrice %>
+    <%= f.number_field :PayPrice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PayButton1 %>
+    <%= f.number_field :PayButton1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PayButton2 %>
+    <%= f.number_field :PayButton2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PayButton3 %>
+    <%= f.number_field :PayButton3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PayButton4 %>
+    <%= f.number_field :PayButton4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LoopedSound %>
+    <%= f.text_field :LoopedSound %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LoopedSoundGain %>
+    <%= f.text_field :LoopedSoundGain %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TextureAnimation %>
+    <%= f.text_field :TextureAnimation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OmegaX %>
+    <%= f.text_field :OmegaX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OmegaY %>
+    <%= f.text_field :OmegaY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OmegaZ %>
+    <%= f.text_field :OmegaZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CameraEyeOffsetX %>
+    <%= f.text_field :CameraEyeOffsetX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CameraEyeOffsetY %>
+    <%= f.text_field :CameraEyeOffsetY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CameraEyeOffsetZ %>
+    <%= f.text_field :CameraEyeOffsetZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CameraAtOffsetX %>
+    <%= f.text_field :CameraAtOffsetX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CameraAtOffsetY %>
+    <%= f.text_field :CameraAtOffsetY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CameraAtOffsetZ %>
+    <%= f.text_field :CameraAtOffsetZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ForceMouselook %>
+    <%= f.number_field :ForceMouselook %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ScriptAccessPin %>
+    <%= f.number_field :ScriptAccessPin %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowedDrop %>
+    <%= f.number_field :AllowedDrop %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DieAtEdge %>
+    <%= f.number_field :DieAtEdge %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SalePrice %>
+    <%= f.number_field :SalePrice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SaleType %>
+    <%= f.number_field :SaleType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ColorR %>
+    <%= f.number_field :ColorR %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ColorG %>
+    <%= f.number_field :ColorG %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ColorB %>
+    <%= f.number_field :ColorB %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ColorA %>
+    <%= f.number_field :ColorA %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ParticleSystem %>
+    <%= f.text_field :ParticleSystem %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ClickAction %>
+    <%= f.number_field :ClickAction %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Material %>
+    <%= f.number_field :Material %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CollisionSound %>
+    <%= f.text_field :CollisionSound %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CollisionSoundVolume %>
+    <%= f.text_field :CollisionSoundVolume %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LinkNumber %>
+    <%= f.number_field :LinkNumber %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PassTouches %>
+    <%= f.number_field :PassTouches %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaURL %>
+    <%= f.text_field :MediaURL %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DynAttrs %>
+    <%= f.text_area :DynAttrs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PhysicsShapeType %>
+    <%= f.number_field :PhysicsShapeType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Density %>
+    <%= f.text_field :Density %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GravityModifier %>
+    <%= f.text_field :GravityModifier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Friction %>
+    <%= f.text_field :Friction %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Restitution %>
+    <%= f.text_field :Restitution %>
+  </div>
+
+  <div class="field">
+    <%= f.label :KeyframeMotion %>
+    <%= f.text_field :KeyframeMotion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachedPosX %>
+    <%= f.text_field :AttachedPosX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachedPosY %>
+    <%= f.text_field :AttachedPosY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachedPosZ %>
+    <%= f.text_field :AttachedPosZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PassCollisions %>
+    <%= f.number_field :PassCollisions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Vehicle %>
+    <%= f.text_area :Vehicle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RotationAxisLocks %>
+    <%= f.number_field :RotationAxisLocks %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RezzerID %>
+    <%= f.text_field :RezzerID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,42 @@
+<%= form_for(estateban) do |f| %>
+  <% if estateban.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estateban.errors.count, "error") %> prohibited this estateban from being saved:</h2>
+
+      <ul>
+      <% estateban.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EstateID %>
+    <%= f.number_field :EstateID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedUUID %>
+    <%= f.text_field :bannedUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedIp %>
+    <%= f.text_field :bannedIp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedIpHostMask %>
+    <%= f.text_field :bannedIpHostMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedNameMask %>
+    <%= f.text_field :bannedNameMask %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

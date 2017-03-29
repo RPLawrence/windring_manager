@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regionuuid:</strong>
+  <%= @regionban.regionUUID %>
+</p>
+
+<p>
+  <strong>Banneduuid:</strong>
+  <%= @regionban.bannedUUID %>
+</p>
+
+<p>
+  <strong>Bannedip:</strong>
+  <%= @regionban.bannedIp %>
+</p>
+
+<p>
+  <strong>Bannediphostmask:</strong>
+  <%= @regionban.bannedIpHostMask %>
+</p>
+
+<%= link_to 'Edit', edit_regionban_path(@regionban) %> |
+<%= link_to 'Back', regionbans_path %>

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Userpicks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Creatoruuid</th>
+      <th>Toppick</th>
+      <th>Parceluuid</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Snapshotuuid</th>
+      <th>User</th>
+      <th>Originalname</th>
+      <th>Simname</th>
+      <th>Posglobal</th>
+      <th>Sortorder</th>
+      <th>Enabled</th>
+      <th>Gatekeeper</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @userpicks.each do |userpick| %>
+      <tr>
+        <td><%= userpick.creatoruuid %></td>
+        <td><%= userpick.toppick %></td>
+        <td><%= userpick.parceluuid %></td>
+        <td><%= userpick.name %></td>
+        <td><%= userpick.description %></td>
+        <td><%= userpick.snapshotuuid %></td>
+        <td><%= userpick.user %></td>
+        <td><%= userpick.originalname %></td>
+        <td><%= userpick.simname %></td>
+        <td><%= userpick.posglobal %></td>
+        <td><%= userpick.sortorder %></td>
+        <td><%= userpick.enabled %></td>
+        <td><%= userpick.gatekeeper %></td>
+        <td><%= link_to 'Show', userpick %></td>
+        <td><%= link_to 'Edit', edit_userpick_path(userpick) %></td>
+        <td><%= link_to 'Destroy', userpick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Userpick', new_userpick_path %>

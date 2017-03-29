@@ -1,0 +1,2 @@
+module OsGroupsPrincipalsHelper
+end

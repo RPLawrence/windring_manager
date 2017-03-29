@@ -1,0 +1,47 @@
+<%= form_for(os_groups_role) do |f| %>
+  <% if os_groups_role.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(os_groups_role.errors.count, "error") %> prohibited this os_groups_role from being saved:</h2>
+
+      <ul>
+      <% os_groups_role.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GroupID %>
+    <%= f.text_field :GroupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RoleID %>
+    <%= f.text_field :RoleID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Description %>
+    <%= f.text_field :Description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Title %>
+    <%= f.text_field :Title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Powers %>
+    <%= f.text_field :Powers %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

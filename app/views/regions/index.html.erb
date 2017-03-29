@@ -1,0 +1,97 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Regions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regionhandle</th>
+      <th>Regionname</th>
+      <th>Regionrecvkey</th>
+      <th>Regionsendkey</th>
+      <th>Regionsecret</th>
+      <th>Regiondatauri</th>
+      <th>Serverip</th>
+      <th>Serverport</th>
+      <th>Serveruri</th>
+      <th>Locx</th>
+      <th>Locy</th>
+      <th>Locz</th>
+      <th>Eastoverridehandle</th>
+      <th>Westoverridehandle</th>
+      <th>Southoverridehandle</th>
+      <th>Northoverridehandle</th>
+      <th>Regionasseturi</th>
+      <th>Regionassetrecvkey</th>
+      <th>Regionassetsendkey</th>
+      <th>Regionuseruri</th>
+      <th>Regionuserrecvkey</th>
+      <th>Regionusersendkey</th>
+      <th>Regionmaptexture</th>
+      <th>Serverhttpport</th>
+      <th>Serverremotingport</th>
+      <th>Owner uuid</th>
+      <th>Originuuid</th>
+      <th>Access</th>
+      <th>Scopeid</th>
+      <th>Sizex</th>
+      <th>Sizey</th>
+      <th>Flags</th>
+      <th>Last seen</th>
+      <th>Principalid</th>
+      <th>Token</th>
+      <th>Parcelmaptexture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regions.each do |region| %>
+      <tr>
+        <td><%= region.regionHandle %></td>
+        <td><%= region.regionName %></td>
+        <td><%= region.regionRecvKey %></td>
+        <td><%= region.regionSendKey %></td>
+        <td><%= region.regionSecret %></td>
+        <td><%= region.regionDataURI %></td>
+        <td><%= region.serverIP %></td>
+        <td><%= region.serverPort %></td>
+        <td><%= region.serverURI %></td>
+        <td><%= region.locX %></td>
+        <td><%= region.locY %></td>
+        <td><%= region.locZ %></td>
+        <td><%= region.eastOverrideHandle %></td>
+        <td><%= region.westOverrideHandle %></td>
+        <td><%= region.southOverrideHandle %></td>
+        <td><%= region.northOverrideHandle %></td>
+        <td><%= region.regionAssetURI %></td>
+        <td><%= region.regionAssetRecvKey %></td>
+        <td><%= region.regionAssetSendKey %></td>
+        <td><%= region.regionUserURI %></td>
+        <td><%= region.regionUserRecvKey %></td>
+        <td><%= region.regionUserSendKey %></td>
+        <td><%= region.regionMapTexture %></td>
+        <td><%= region.serverHttpPort %></td>
+        <td><%= region.serverRemotingPort %></td>
+        <td><%= region.owner_uuid %></td>
+        <td><%= region.originUUID %></td>
+        <td><%= region.access %></td>
+        <td><%= region.ScopeID %></td>
+        <td><%= region.sizeX %></td>
+        <td><%= region.sizeY %></td>
+        <td><%= region.flags %></td>
+        <td><%= region.last_seen %></td>
+        <td><%= region.PrincipalID %></td>
+        <td><%= region.Token %></td>
+        <td><%= region.parcelMapTexture %></td>
+        <td><%= link_to 'Show', region %></td>
+        <td><%= link_to 'Edit', edit_region_path(region) %></td>
+        <td><%= link_to 'Destroy', region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Region', new_region_path %>

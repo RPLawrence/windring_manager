@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RegionID: MyString
+  Yaw: 1.5
+  Pitch: 1.5
+  Distance: 1.5
+
+two:
+  RegionID: MyString
+  Yaw: 1.5
+  Pitch: 1.5
+  Distance: 1.5

@@ -1,0 +1,2 @@
+class OsGroupsMembership < ApplicationRecord
+end

@@ -1,0 +1,47 @@
+<%= form_for(hg_traveling_datum) do |f| %>
+  <% if hg_traveling_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hg_traveling_datum.errors.count, "error") %> prohibited this hg_traveling_datum from being saved:</h2>
+
+      <ul>
+      <% hg_traveling_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :UserID %>
+    <%= f.text_field :UserID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GridExternalName %>
+    <%= f.text_field :GridExternalName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ServiceToken %>
+    <%= f.text_field :ServiceToken %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ClientIPAddress %>
+    <%= f.text_field :ClientIPAddress %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MyIPAddress %>
+    <%= f.text_field :MyIPAddress %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TMStamp %>
+    <%= f.datetime_select :TMStamp %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

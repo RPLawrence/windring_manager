@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PrincipalID: MyString
+  Friend: MyString
+  Flags: MyString
+  Offered: MyString
+
+two:
+  PrincipalID: MyString
+  Friend: MyString
+  Flags: MyString
+  Offered: MyString

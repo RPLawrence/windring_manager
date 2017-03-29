@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EstateID: 1
+  bannedUUID: MyString
+  bannedIp: MyString
+  bannedIpHostMask: MyString
+  bannedNameMask: MyString
+
+two:
+  EstateID: 1
+  bannedUUID: MyString
+  bannedIp: MyString
+  bannedIpHostMask: MyString
+  bannedNameMask: MyString

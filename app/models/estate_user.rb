@@ -1,0 +1,2 @@
+class EstateUser < ApplicationRecord
+end

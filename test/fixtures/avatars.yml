@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PrincipalID: MyString
+  Name: MyString
+  Value: MyText
+
+two:
+  PrincipalID: MyString
+  Name: MyString
+  Value: MyText

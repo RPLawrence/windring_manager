@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Os Groups Roles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Groupid</th>
+      <th>Roleid</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Title</th>
+      <th>Powers</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @os_groups_roles.each do |os_groups_role| %>
+      <tr>
+        <td><%= os_groups_role.GroupID %></td>
+        <td><%= os_groups_role.RoleID %></td>
+        <td><%= os_groups_role.Name %></td>
+        <td><%= os_groups_role.Description %></td>
+        <td><%= os_groups_role.Title %></td>
+        <td><%= os_groups_role.Powers %></td>
+        <td><%= link_to 'Show', os_groups_role %></td>
+        <td><%= link_to 'Edit', edit_os_groups_role_path(os_groups_role) %></td>
+        <td><%= link_to 'Destroy', os_groups_role, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Os Groups Role', new_os_groups_role_path %>

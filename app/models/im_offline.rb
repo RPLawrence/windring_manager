@@ -1,0 +1,2 @@
+class ImOffline < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class OsGroupsPrincipal < ApplicationRecord
+end

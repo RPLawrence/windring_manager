@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Homeregionid:</strong>
+  <%= @grid_user.HomeRegionID %>
+</p>
+
+<p>
+  <strong>Homeposition:</strong>
+  <%= @grid_user.HomePosition %>
+</p>
+
+<p>
+  <strong>Homelookat:</strong>
+  <%= @grid_user.HomeLookAt %>
+</p>
+
+<p>
+  <strong>Lastregionid:</strong>
+  <%= @grid_user.LastRegionID %>
+</p>
+
+<p>
+  <strong>Lastposition:</strong>
+  <%= @grid_user.LastPosition %>
+</p>
+
+<p>
+  <strong>Lastlookat:</strong>
+  <%= @grid_user.LastLookAt %>
+</p>
+
+<p>
+  <strong>Online:</strong>
+  <%= @grid_user.Online %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @grid_user.Login %>
+</p>
+
+<p>
+  <strong>Logout:</strong>
+  <%= @grid_user.Logout %>
+</p>
+
+<%= link_to 'Edit', edit_grid_user_path(@grid_user) %> |
+<%= link_to 'Back', grid_users_path %>

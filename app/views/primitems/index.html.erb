@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Primitems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Invtype</th>
+      <th>Assettype</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Creationdate</th>
+      <th>Nextpermissions</th>
+      <th>Currentpermissions</th>
+      <th>Basepermissions</th>
+      <th>Everyonepermissions</th>
+      <th>Grouppermissions</th>
+      <th>Flags</th>
+      <th>Primid</th>
+      <th>Assetid</th>
+      <th>Parentfolderid</th>
+      <th>Creatorid</th>
+      <th>Ownerid</th>
+      <th>Groupid</th>
+      <th>Lastownerid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @primitems.each do |primitem| %>
+      <tr>
+        <td><%= primitem.invType %></td>
+        <td><%= primitem.assetType %></td>
+        <td><%= primitem.name %></td>
+        <td><%= primitem.description %></td>
+        <td><%= primitem.creationDate %></td>
+        <td><%= primitem.nextPermissions %></td>
+        <td><%= primitem.currentPermissions %></td>
+        <td><%= primitem.basePermissions %></td>
+        <td><%= primitem.everyonePermissions %></td>
+        <td><%= primitem.groupPermissions %></td>
+        <td><%= primitem.flags %></td>
+        <td><%= primitem.primID %></td>
+        <td><%= primitem.assetID %></td>
+        <td><%= primitem.parentFolderID %></td>
+        <td><%= primitem.CreatorID %></td>
+        <td><%= primitem.ownerID %></td>
+        <td><%= primitem.groupID %></td>
+        <td><%= primitem.lastOwnerID %></td>
+        <td><%= link_to 'Show', primitem %></td>
+        <td><%= link_to 'Edit', edit_primitem_path(primitem) %></td>
+        <td><%= link_to 'Destroy', primitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Primitem', new_primitem_path %>

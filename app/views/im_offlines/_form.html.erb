@@ -1,0 +1,37 @@
+<%= form_for(im_offline) do |f| %>
+  <% if im_offline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(im_offline.errors.count, "error") %> prohibited this im_offline from being saved:</h2>
+
+      <ul>
+      <% im_offline.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PrincipalID %>
+    <%= f.text_field :PrincipalID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FromID %>
+    <%= f.text_field :FromID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Message %>
+    <%= f.text_area :Message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TMStamp %>
+    <%= f.datetime_select :TMStamp %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

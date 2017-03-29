@@ -1,0 +1,147 @@
+<%= form_for(estate_setting) do |f| %>
+  <% if estate_setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estate_setting.errors.count, "error") %> prohibited this estate_setting from being saved:</h2>
+
+      <ul>
+      <% estate_setting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EstateName %>
+    <%= f.text_field :EstateName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AbuseEmailToEstateOwner %>
+    <%= f.number_field :AbuseEmailToEstateOwner %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DenyAnonymous %>
+    <%= f.number_field :DenyAnonymous %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ResetHomeOnTeleport %>
+    <%= f.number_field :ResetHomeOnTeleport %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FixedSun %>
+    <%= f.number_field :FixedSun %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DenyTransacted %>
+    <%= f.number_field :DenyTransacted %>
+  </div>
+
+  <div class="field">
+    <%= f.label :BlockDwell %>
+    <%= f.number_field :BlockDwell %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DenyIdentified %>
+    <%= f.number_field :DenyIdentified %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowVoice %>
+    <%= f.number_field :AllowVoice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UseGlobalTime %>
+    <%= f.number_field :UseGlobalTime %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PricePerMeter %>
+    <%= f.number_field :PricePerMeter %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TaxFree %>
+    <%= f.number_field :TaxFree %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowDirectTeleport %>
+    <%= f.number_field :AllowDirectTeleport %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RedirectGridX %>
+    <%= f.number_field :RedirectGridX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RedirectGridY %>
+    <%= f.number_field :RedirectGridY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ParentEstateID %>
+    <%= f.number_field :ParentEstateID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SunPosition %>
+    <%= f.text_field :SunPosition %>
+  </div>
+
+  <div class="field">
+    <%= f.label :EstateSkipScripts %>
+    <%= f.number_field :EstateSkipScripts %>
+  </div>
+
+  <div class="field">
+    <%= f.label :BillableFactor %>
+    <%= f.text_field :BillableFactor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PublicAccess %>
+    <%= f.number_field :PublicAccess %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AbuseEmail %>
+    <%= f.text_field :AbuseEmail %>
+  </div>
+
+  <div class="field">
+    <%= f.label :EstateOwner %>
+    <%= f.text_field :EstateOwner %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DenyMinors %>
+    <%= f.number_field :DenyMinors %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowLandmark %>
+    <%= f.number_field :AllowLandmark %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowParcelChanges %>
+    <%= f.number_field :AllowParcelChanges %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowSetHome %>
+    <%= f.number_field :AllowSetHome %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

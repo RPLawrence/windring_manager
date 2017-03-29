@@ -1,0 +1,87 @@
+<%= form_for(classified) do |f| %>
+  <% if classified.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(classified.errors.count, "error") %> prohibited this classified from being saved:</h2>
+
+      <ul>
+      <% classified.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :creatoruuid %>
+    <%= f.text_field :creatoruuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :creationdate %>
+    <%= f.number_field :creationdate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :expirationdate %>
+    <%= f.number_field :expirationdate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category %>
+    <%= f.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parceluuid %>
+    <%= f.text_field :parceluuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parentestate %>
+    <%= f.number_field :parentestate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :snapshotuuid %>
+    <%= f.text_field :snapshotuuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :simname %>
+    <%= f.text_field :simname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :posglobal %>
+    <%= f.text_field :posglobal %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parcelname %>
+    <%= f.text_field :parcelname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classifiedflags %>
+    <%= f.number_field :classifiedflags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :priceforlisting %>
+    <%= f.number_field :priceforlisting %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

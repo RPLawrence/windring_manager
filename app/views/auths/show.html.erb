@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Passwordhash:</strong>
+  <%= @auth.passwordHash %>
+</p>
+
+<p>
+  <strong>Passwordsalt:</strong>
+  <%= @auth.passwordSalt %>
+</p>
+
+<p>
+  <strong>Webloginkey:</strong>
+  <%= @auth.webLoginKey %>
+</p>
+
+<p>
+  <strong>Accounttype:</strong>
+  <%= @auth.accountType %>
+</p>
+
+<%= link_to 'Edit', edit_auth_path(@auth) %> |
+<%= link_to 'Back', auths_path %>

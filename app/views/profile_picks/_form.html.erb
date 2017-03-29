@@ -1,0 +1,77 @@
+<%= form_for(profile_pick) do |f| %>
+  <% if profile_pick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(profile_pick.errors.count, "error") %> prohibited this profile_pick from being saved:</h2>
+
+      <ul>
+      <% profile_pick.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :creatoruuid %>
+    <%= f.text_field :creatoruuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :toppick %>
+    <%= f.text_field :toppick %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parceluuid %>
+    <%= f.text_field :parceluuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :snapshotuuid %>
+    <%= f.text_field :snapshotuuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user %>
+    <%= f.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= f.label :originalname %>
+    <%= f.text_field :originalname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :simname %>
+    <%= f.text_field :simname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :posglobal %>
+    <%= f.text_field :posglobal %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sortorder %>
+    <%= f.number_field :sortorder %>
+  </div>
+
+  <div class="field">
+    <%= f.label :enabled %>
+    <%= f.text_field :enabled %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,82 @@
+<%= form_for(profile) do |f| %>
+  <% if profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :profilePartner %>
+    <%= f.text_field :profilePartner %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileAllowPublish %>
+    <%= f.text_field :profileAllowPublish %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileMaturePublish %>
+    <%= f.text_field :profileMaturePublish %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileURL %>
+    <%= f.text_field :profileURL %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileWantToMask %>
+    <%= f.number_field :profileWantToMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileWantToText %>
+    <%= f.text_area :profileWantToText %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileSkillsMask %>
+    <%= f.number_field :profileSkillsMask %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileSkillsText %>
+    <%= f.text_area :profileSkillsText %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileLanguages %>
+    <%= f.text_area :profileLanguages %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileImage %>
+    <%= f.text_field :profileImage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileAboutText %>
+    <%= f.text_area :profileAboutText %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileFirstImage %>
+    <%= f.text_field :profileFirstImage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profileFirstText %>
+    <%= f.text_area :profileFirstText %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

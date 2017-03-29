@@ -1,0 +1,22 @@
+<%= form_for(os_groups_principal) do |f| %>
+  <% if os_groups_principal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(os_groups_principal.errors.count, "error") %> prohibited this os_groups_principal from being saved:</h2>
+
+      <ul>
+      <% os_groups_principal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ActiveGroupID %>
+    <%= f.text_field :ActiveGroupID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

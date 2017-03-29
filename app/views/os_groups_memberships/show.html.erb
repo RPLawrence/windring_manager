@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Groupid:</strong>
+  <%= @os_groups_membership.GroupID %>
+</p>
+
+<p>
+  <strong>Principalid:</strong>
+  <%= @os_groups_membership.PrincipalID %>
+</p>
+
+<p>
+  <strong>Selectedroleid:</strong>
+  <%= @os_groups_membership.SelectedRoleID %>
+</p>
+
+<p>
+  <strong>Contribution:</strong>
+  <%= @os_groups_membership.Contribution %>
+</p>
+
+<p>
+  <strong>Listinprofile:</strong>
+  <%= @os_groups_membership.ListInProfile %>
+</p>
+
+<p>
+  <strong>Acceptnotices:</strong>
+  <%= @os_groups_membership.AcceptNotices %>
+</p>
+
+<p>
+  <strong>Accesstoken:</strong>
+  <%= @os_groups_membership.AccessToken %>
+</p>
+
+<%= link_to 'Edit', edit_os_groups_membership_path(@os_groups_membership) %> |
+<%= link_to 'Back', os_groups_memberships_path %>

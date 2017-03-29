@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Useruuid:</strong>
+  <%= @usernote.useruuid %>
+</p>
+
+<p>
+  <strong>Targetuuid:</strong>
+  <%= @usernote.targetuuid %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @usernote.notes %>
+</p>
+
+<%= link_to 'Edit', edit_usernote_path(@usernote) %> |
+<%= link_to 'Back', usernotes_path %>

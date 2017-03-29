@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  regionUUID: MyString
+  bannedUUID: MyString
+  bannedIp: MyString
+  bannedIpHostMask: MyString
+
+two:
+  regionUUID: MyString
+  bannedUUID: MyString
+  bannedIp: MyString
+  bannedIpHostMask: MyString

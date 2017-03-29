@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Location: MyString
+  Name: MyString
+  Charter: MyText
+  InsigniaID: MyString
+  FounderID: MyString
+  MembershipFee: 1
+  OpenEnrollment: MyString
+  ShowInList: 1
+  AllowPublish: 1
+  MaturePublish: 1
+  OwnerRoleID: MyString
+
+two:
+  Location: MyString
+  Name: MyString
+  Charter: MyText
+  InsigniaID: MyString
+  FounderID: MyString
+  MembershipFee: 1
+  OpenEnrollment: MyString
+  ShowInList: 1
+  AllowPublish: 1
+  MaturePublish: 1
+  OwnerRoleID: MyString

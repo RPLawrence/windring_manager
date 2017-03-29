@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @presence.UserID %>
+</p>
+
+<p>
+  <strong>Regionid:</strong>
+  <%= @presence.RegionID %>
+</p>
+
+<p>
+  <strong>Sessionid:</strong>
+  <%= @presence.SessionID %>
+</p>
+
+<p>
+  <strong>Securesessionid:</strong>
+  <%= @presence.SecureSessionID %>
+</p>
+
+<p>
+  <strong>Lastseen:</strong>
+  <%= @presence.LastSeen %>
+</p>
+
+<%= link_to 'Edit', edit_presence_path(@presence) %> |
+<%= link_to 'Back', presences_path %>

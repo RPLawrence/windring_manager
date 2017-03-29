@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Principalid</th>
+      <th>Scopeid</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+      <th>Serviceurls</th>
+      <th>Created</th>
+      <th>Userlevel</th>
+      <th>Userflags</th>
+      <th>Usertitle</th>
+      <th>Active</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_accounts.each do |user_account| %>
+      <tr>
+        <td><%= user_account.PrincipalID %></td>
+        <td><%= user_account.ScopeID %></td>
+        <td><%= user_account.FirstName %></td>
+        <td><%= user_account.LastName %></td>
+        <td><%= user_account.Email %></td>
+        <td><%= user_account.ServiceURLs %></td>
+        <td><%= user_account.Created %></td>
+        <td><%= user_account.UserLevel %></td>
+        <td><%= user_account.UserFlags %></td>
+        <td><%= user_account.UserTitle %></td>
+        <td><%= user_account.active %></td>
+        <td><%= link_to 'Show', user_account %></td>
+        <td><%= link_to 'Edit', edit_user_account_path(user_account) %></td>
+        <td><%= link_to 'Destroy', user_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User Account', new_user_account_path %>

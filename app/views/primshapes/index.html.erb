@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Primshapes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shape</th>
+      <th>Scalex</th>
+      <th>Scaley</th>
+      <th>Scalez</th>
+      <th>Pcode</th>
+      <th>Pathbegin</th>
+      <th>Pathend</th>
+      <th>Pathscalex</th>
+      <th>Pathscaley</th>
+      <th>Pathshearx</th>
+      <th>Pathsheary</th>
+      <th>Pathskew</th>
+      <th>Pathcurve</th>
+      <th>Pathradiusoffset</th>
+      <th>Pathrevolutions</th>
+      <th>Pathtaperx</th>
+      <th>Pathtapery</th>
+      <th>Pathtwist</th>
+      <th>Pathtwistbegin</th>
+      <th>Profilebegin</th>
+      <th>Profileend</th>
+      <th>Profilecurve</th>
+      <th>Profilehollow</th>
+      <th>State</th>
+      <th>Texture</th>
+      <th>Extraparams</th>
+      <th>Media</th>
+      <th>Lastattachpoint</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @primshapes.each do |primshape| %>
+      <tr>
+        <td><%= primshape.Shape %></td>
+        <td><%= primshape.ScaleX %></td>
+        <td><%= primshape.ScaleY %></td>
+        <td><%= primshape.ScaleZ %></td>
+        <td><%= primshape.PCode %></td>
+        <td><%= primshape.PathBegin %></td>
+        <td><%= primshape.PathEnd %></td>
+        <td><%= primshape.PathScaleX %></td>
+        <td><%= primshape.PathScaleY %></td>
+        <td><%= primshape.PathShearX %></td>
+        <td><%= primshape.PathShearY %></td>
+        <td><%= primshape.PathSkew %></td>
+        <td><%= primshape.PathCurve %></td>
+        <td><%= primshape.PathRadiusOffset %></td>
+        <td><%= primshape.PathRevolutions %></td>
+        <td><%= primshape.PathTaperX %></td>
+        <td><%= primshape.PathTaperY %></td>
+        <td><%= primshape.PathTwist %></td>
+        <td><%= primshape.PathTwistBegin %></td>
+        <td><%= primshape.ProfileBegin %></td>
+        <td><%= primshape.ProfileEnd %></td>
+        <td><%= primshape.ProfileCurve %></td>
+        <td><%= primshape.ProfileHollow %></td>
+        <td><%= primshape.State %></td>
+        <td><%= primshape.Texture %></td>
+        <td><%= primshape.ExtraParams %></td>
+        <td><%= primshape.Media %></td>
+        <td><%= primshape.LastAttachPoint %></td>
+        <td><%= link_to 'Show', primshape %></td>
+        <td><%= link_to 'Edit', edit_primshape_path(primshape) %></td>
+        <td><%= link_to 'Destroy', primshape, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Primshape', new_primshape_path %>

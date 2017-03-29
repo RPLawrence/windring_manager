@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Inventoryitems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Assetid</th>
+      <th>Assettype</th>
+      <th>Inventoryname</th>
+      <th>Inventorydescription</th>
+      <th>Inventorynextpermissions</th>
+      <th>Inventorycurrentpermissions</th>
+      <th>Invtype</th>
+      <th>Creatorid</th>
+      <th>Inventorybasepermissions</th>
+      <th>Inventoryeveryonepermissions</th>
+      <th>Saleprice</th>
+      <th>Saletype</th>
+      <th>Creationdate</th>
+      <th>Groupid</th>
+      <th>Groupowned</th>
+      <th>Flags</th>
+      <th>Inventorygrouppermissions</th>
+      <th>Avatarid</th>
+      <th>Parentfolderid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inventoryitems.each do |inventoryitem| %>
+      <tr>
+        <td><%= inventoryitem.assetID %></td>
+        <td><%= inventoryitem.assetType %></td>
+        <td><%= inventoryitem.inventoryName %></td>
+        <td><%= inventoryitem.inventoryDescription %></td>
+        <td><%= inventoryitem.inventoryNextPermissions %></td>
+        <td><%= inventoryitem.inventoryCurrentPermissions %></td>
+        <td><%= inventoryitem.invType %></td>
+        <td><%= inventoryitem.creatorID %></td>
+        <td><%= inventoryitem.inventoryBasePermissions %></td>
+        <td><%= inventoryitem.inventoryEveryOnePermissions %></td>
+        <td><%= inventoryitem.salePrice %></td>
+        <td><%= inventoryitem.saleType %></td>
+        <td><%= inventoryitem.creationDate %></td>
+        <td><%= inventoryitem.groupID %></td>
+        <td><%= inventoryitem.groupOwned %></td>
+        <td><%= inventoryitem.flags %></td>
+        <td><%= inventoryitem.inventoryGroupPermissions %></td>
+        <td><%= inventoryitem.avatarID %></td>
+        <td><%= inventoryitem.parentFolderID %></td>
+        <td><%= link_to 'Show', inventoryitem %></td>
+        <td><%= link_to 'Edit', edit_inventoryitem_path(inventoryitem) %></td>
+        <td><%= link_to 'Destroy', inventoryitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inventoryitem', new_inventoryitem_path %>

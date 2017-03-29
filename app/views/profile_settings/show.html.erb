@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Imviaemail:</strong>
+  <%= @profile_setting.imviaemail %>
+</p>
+
+<p>
+  <strong>Visible:</strong>
+  <%= @profile_setting.visible %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @profile_setting.email %>
+</p>
+
+<%= link_to 'Edit', edit_profile_setting_path(@profile_setting) %> |
+<%= link_to 'Back', profile_settings_path %>

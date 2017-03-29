@@ -1,0 +1,2 @@
+class Regionban < ApplicationRecord
+end

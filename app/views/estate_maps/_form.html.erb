@@ -1,0 +1,22 @@
+<%= form_for(estate_map) do |f| %>
+  <% if estate_map.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estate_map.errors.count, "error") %> prohibited this estate_map from being saved:</h2>
+
+      <ul>
+      <% estate_map.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EstateID %>
+    <%= f.number_field :EstateID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

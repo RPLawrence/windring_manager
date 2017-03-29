@@ -1,0 +1,62 @@
+<%= form_for(grid_user) do |f| %>
+  <% if grid_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grid_user.errors.count, "error") %> prohibited this grid_user from being saved:</h2>
+
+      <ul>
+      <% grid_user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :HomeRegionID %>
+    <%= f.text_field :HomeRegionID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :HomePosition %>
+    <%= f.text_field :HomePosition %>
+  </div>
+
+  <div class="field">
+    <%= f.label :HomeLookAt %>
+    <%= f.text_field :HomeLookAt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastRegionID %>
+    <%= f.text_field :LastRegionID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastPosition %>
+    <%= f.text_field :LastPosition %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastLookAt %>
+    <%= f.text_field :LastLookAt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Online %>
+    <%= f.text_field :Online %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Login %>
+    <%= f.text_field :Login %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Logout %>
+    <%= f.text_field :Logout %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

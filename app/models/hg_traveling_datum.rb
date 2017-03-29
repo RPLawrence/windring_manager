@@ -1,0 +1,2 @@
+class HgTravelingDatum < ApplicationRecord
+end

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  GroupID: MyString
+  RoleID: MyString
+  Name: MyString
+  Description: MyString
+  Title: MyString
+  Powers: 
+
+two:
+  GroupID: MyString
+  RoleID: MyString
+  Name: MyString
+  Description: MyString
+  Title: MyString
+  Powers: 

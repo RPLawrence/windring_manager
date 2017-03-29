@@ -1,0 +1,2 @@
+class ProfileClassified < ApplicationRecord
+end

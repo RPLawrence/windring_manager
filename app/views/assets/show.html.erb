@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @asset.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @asset.description %>
+</p>
+
+<p>
+  <strong>Assettype:</strong>
+  <%= @asset.assetType %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @asset.local %>
+</p>
+
+<p>
+  <strong>Temporary:</strong>
+  <%= @asset.temporary %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @asset.data %>
+</p>
+
+<p>
+  <strong>Create time:</strong>
+  <%= @asset.create_time %>
+</p>
+
+<p>
+  <strong>Access time:</strong>
+  <%= @asset.access_time %>
+</p>
+
+<p>
+  <strong>Asset flags:</strong>
+  <%= @asset.asset_flags %>
+</p>
+
+<p>
+  <strong>Creatorid:</strong>
+  <%= @asset.CreatorID %>
+</p>
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>

@@ -1,0 +1,2 @@
+module OsGroupsInvitesHelper
+end

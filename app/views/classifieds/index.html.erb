@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Classifieds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Creatoruuid</th>
+      <th>Creationdate</th>
+      <th>Expirationdate</th>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Parceluuid</th>
+      <th>Parentestate</th>
+      <th>Snapshotuuid</th>
+      <th>Simname</th>
+      <th>Posglobal</th>
+      <th>Parcelname</th>
+      <th>Classifiedflags</th>
+      <th>Priceforlisting</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classifieds.each do |classified| %>
+      <tr>
+        <td><%= classified.creatoruuid %></td>
+        <td><%= classified.creationdate %></td>
+        <td><%= classified.expirationdate %></td>
+        <td><%= classified.category %></td>
+        <td><%= classified.name %></td>
+        <td><%= classified.description %></td>
+        <td><%= classified.parceluuid %></td>
+        <td><%= classified.parentestate %></td>
+        <td><%= classified.snapshotuuid %></td>
+        <td><%= classified.simname %></td>
+        <td><%= classified.posglobal %></td>
+        <td><%= classified.parcelname %></td>
+        <td><%= classified.classifiedflags %></td>
+        <td><%= classified.priceforlisting %></td>
+        <td><%= link_to 'Show', classified %></td>
+        <td><%= link_to 'Edit', edit_classified_path(classified) %></td>
+        <td><%= link_to 'Destroy', classified, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Classified', new_classified_path %>

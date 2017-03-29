@@ -1,0 +1,67 @@
+<%= form_for(os_groups_notice) do |f| %>
+  <% if os_groups_notice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(os_groups_notice.errors.count, "error") %> prohibited this os_groups_notice from being saved:</h2>
+
+      <ul>
+      <% os_groups_notice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GroupID %>
+    <%= f.text_field :GroupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TMStamp %>
+    <%= f.number_field :TMStamp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FromName %>
+    <%= f.text_field :FromName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Subject %>
+    <%= f.text_field :Subject %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Message %>
+    <%= f.text_area :Message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :HasAttachment %>
+    <%= f.number_field :HasAttachment %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachmentType %>
+    <%= f.number_field :AttachmentType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachmentName %>
+    <%= f.text_field :AttachmentName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachmentItemID %>
+    <%= f.text_field :AttachmentItemID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AttachmentOwnerID %>
+    <%= f.text_field :AttachmentOwnerID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

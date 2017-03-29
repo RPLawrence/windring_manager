@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bakedterrains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regionuuid</th>
+      <th>Revision</th>
+      <th>Heightfield</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bakedterrains.each do |bakedterrain| %>
+      <tr>
+        <td><%= bakedterrain.RegionUUID %></td>
+        <td><%= bakedterrain.Revision %></td>
+        <td><%= bakedterrain.Heightfield %></td>
+        <td><%= link_to 'Show', bakedterrain %></td>
+        <td><%= link_to 'Edit', edit_bakedterrain_path(bakedterrain) %></td>
+        <td><%= link_to 'Destroy', bakedterrain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bakedterrain', new_bakedterrain_path %>

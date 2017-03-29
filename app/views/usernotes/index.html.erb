@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usernotes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Useruuid</th>
+      <th>Targetuuid</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usernotes.each do |usernote| %>
+      <tr>
+        <td><%= usernote.useruuid %></td>
+        <td><%= usernote.targetuuid %></td>
+        <td><%= usernote.notes %></td>
+        <td><%= link_to 'Show', usernote %></td>
+        <td><%= link_to 'Edit', edit_usernote_path(usernote) %></td>
+        <td><%= link_to 'Destroy', usernote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usernote', new_usernote_path %>

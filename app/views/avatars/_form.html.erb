@@ -1,0 +1,32 @@
+<%= form_for(avatar) do |f| %>
+  <% if avatar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(avatar.errors.count, "error") %> prohibited this avatar from being saved:</h2>
+
+      <ul>
+      <% avatar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PrincipalID %>
+    <%= f.text_field :PrincipalID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Value %>
+    <%= f.text_area :Value %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

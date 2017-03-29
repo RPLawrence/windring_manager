@@ -1,0 +1,197 @@
+<%= form_for(region) do |f| %>
+  <% if region.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(region.errors.count, "error") %> prohibited this region from being saved:</h2>
+
+      <ul>
+      <% region.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :regionHandle %>
+    <%= f.text_field :regionHandle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionName %>
+    <%= f.text_field :regionName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionRecvKey %>
+    <%= f.text_field :regionRecvKey %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionSendKey %>
+    <%= f.text_field :regionSendKey %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionSecret %>
+    <%= f.text_field :regionSecret %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionDataURI %>
+    <%= f.text_field :regionDataURI %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serverIP %>
+    <%= f.text_field :serverIP %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serverPort %>
+    <%= f.number_field :serverPort %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serverURI %>
+    <%= f.text_field :serverURI %>
+  </div>
+
+  <div class="field">
+    <%= f.label :locX %>
+    <%= f.number_field :locX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :locY %>
+    <%= f.number_field :locY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :locZ %>
+    <%= f.number_field :locZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :eastOverrideHandle %>
+    <%= f.text_field :eastOverrideHandle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :westOverrideHandle %>
+    <%= f.text_field :westOverrideHandle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :southOverrideHandle %>
+    <%= f.text_field :southOverrideHandle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :northOverrideHandle %>
+    <%= f.text_field :northOverrideHandle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionAssetURI %>
+    <%= f.text_field :regionAssetURI %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionAssetRecvKey %>
+    <%= f.text_field :regionAssetRecvKey %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionAssetSendKey %>
+    <%= f.text_field :regionAssetSendKey %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionUserURI %>
+    <%= f.text_field :regionUserURI %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionUserRecvKey %>
+    <%= f.text_field :regionUserRecvKey %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionUserSendKey %>
+    <%= f.text_field :regionUserSendKey %>
+  </div>
+
+  <div class="field">
+    <%= f.label :regionMapTexture %>
+    <%= f.text_field :regionMapTexture %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serverHttpPort %>
+    <%= f.number_field :serverHttpPort %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serverRemotingPort %>
+    <%= f.number_field :serverRemotingPort %>
+  </div>
+
+  <div class="field">
+    <%= f.label :owner_uuid %>
+    <%= f.text_field :owner_uuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :originUUID %>
+    <%= f.text_field :originUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :access %>
+    <%= f.number_field :access %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ScopeID %>
+    <%= f.text_field :ScopeID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sizeX %>
+    <%= f.number_field :sizeX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sizeY %>
+    <%= f.number_field :sizeY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :flags %>
+    <%= f.number_field :flags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_seen %>
+    <%= f.number_field :last_seen %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PrincipalID %>
+    <%= f.text_field :PrincipalID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Token %>
+    <%= f.text_field :Token %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parcelMapTexture %>
+    <%= f.text_field :parcelMapTexture %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

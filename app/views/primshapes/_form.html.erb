@@ -1,0 +1,157 @@
+<%= form_for(primshape) do |f| %>
+  <% if primshape.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(primshape.errors.count, "error") %> prohibited this primshape from being saved:</h2>
+
+      <ul>
+      <% primshape.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Shape %>
+    <%= f.number_field :Shape %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ScaleX %>
+    <%= f.text_field :ScaleX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ScaleY %>
+    <%= f.text_field :ScaleY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ScaleZ %>
+    <%= f.text_field :ScaleZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PCode %>
+    <%= f.number_field :PCode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathBegin %>
+    <%= f.number_field :PathBegin %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathEnd %>
+    <%= f.number_field :PathEnd %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathScaleX %>
+    <%= f.number_field :PathScaleX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathScaleY %>
+    <%= f.number_field :PathScaleY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathShearX %>
+    <%= f.number_field :PathShearX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathShearY %>
+    <%= f.number_field :PathShearY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathSkew %>
+    <%= f.number_field :PathSkew %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathCurve %>
+    <%= f.number_field :PathCurve %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathRadiusOffset %>
+    <%= f.number_field :PathRadiusOffset %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathRevolutions %>
+    <%= f.number_field :PathRevolutions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathTaperX %>
+    <%= f.number_field :PathTaperX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathTaperY %>
+    <%= f.number_field :PathTaperY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathTwist %>
+    <%= f.number_field :PathTwist %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PathTwistBegin %>
+    <%= f.number_field :PathTwistBegin %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ProfileBegin %>
+    <%= f.number_field :ProfileBegin %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ProfileEnd %>
+    <%= f.number_field :ProfileEnd %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ProfileCurve %>
+    <%= f.number_field :ProfileCurve %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ProfileHollow %>
+    <%= f.number_field :ProfileHollow %>
+  </div>
+
+  <div class="field">
+    <%= f.label :State %>
+    <%= f.number_field :State %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Texture %>
+    <%= f.text_field :Texture %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ExtraParams %>
+    <%= f.text_field :ExtraParams %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Media %>
+    <%= f.text_area :Media %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastAttachPoint %>
+    <%= f.number_field :LastAttachPoint %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

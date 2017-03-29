@@ -1,0 +1,37 @@
+<%= form_for(regionban) do |f| %>
+  <% if regionban.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(regionban.errors.count, "error") %> prohibited this regionban from being saved:</h2>
+
+      <ul>
+      <% regionban.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :regionUUID %>
+    <%= f.text_field :regionUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedUUID %>
+    <%= f.text_field :bannedUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedIp %>
+    <%= f.text_field :bannedIp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bannedIpHostMask %>
+    <%= f.text_field :bannedIpHostMask %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

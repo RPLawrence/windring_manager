@@ -1,0 +1,2 @@
+class OsGroupsRole < ApplicationRecord
+end

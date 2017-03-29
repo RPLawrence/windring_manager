@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Estatebans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estateid</th>
+      <th>Banneduuid</th>
+      <th>Bannedip</th>
+      <th>Bannediphostmask</th>
+      <th>Bannednamemask</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estatebans.each do |estateban| %>
+      <tr>
+        <td><%= estateban.EstateID %></td>
+        <td><%= estateban.bannedUUID %></td>
+        <td><%= estateban.bannedIp %></td>
+        <td><%= estateban.bannedIpHostMask %></td>
+        <td><%= estateban.bannedNameMask %></td>
+        <td><%= link_to 'Show', estateban %></td>
+        <td><%= link_to 'Edit', edit_estateban_path(estateban) %></td>
+        <td><%= link_to 'Destroy', estateban, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estateban', new_estateban_path %>

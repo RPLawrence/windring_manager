@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Regionbans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regionuuid</th>
+      <th>Banneduuid</th>
+      <th>Bannedip</th>
+      <th>Bannediphostmask</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regionbans.each do |regionban| %>
+      <tr>
+        <td><%= regionban.regionUUID %></td>
+        <td><%= regionban.bannedUUID %></td>
+        <td><%= regionban.bannedIp %></td>
+        <td><%= regionban.bannedIpHostMask %></td>
+        <td><%= link_to 'Show', regionban %></td>
+        <td><%= link_to 'Edit', edit_regionban_path(regionban) %></td>
+        <td><%= link_to 'Destroy', regionban, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Regionban', new_regionban_path %>

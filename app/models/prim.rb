@@ -1,0 +1,2 @@
+class Prim < ApplicationRecord
+end

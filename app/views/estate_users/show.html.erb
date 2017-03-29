@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estateid:</strong>
+  <%= @estate_user.EstateID %>
+</p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @estate_user.uuid %>
+</p>
+
+<%= link_to 'Edit', edit_estate_user_path(@estate_user) %> |
+<%= link_to 'Back', estate_users_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regionuuid:</strong>
+  <%= @bakedterrain.RegionUUID %>
+</p>
+
+<p>
+  <strong>Revision:</strong>
+  <%= @bakedterrain.Revision %>
+</p>
+
+<p>
+  <strong>Heightfield:</strong>
+  <%= @bakedterrain.Heightfield %>
+</p>
+
+<%= link_to 'Edit', edit_bakedterrain_path(@bakedterrain) %> |
+<%= link_to 'Back', bakedterrains_path %>

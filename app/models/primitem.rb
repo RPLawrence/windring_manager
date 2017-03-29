@@ -1,0 +1,2 @@
+class Primitem < ApplicationRecord
+end

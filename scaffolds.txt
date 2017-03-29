@@ -1,0 +1,106 @@
+#!/bin/sh
+
+rails generate scaffold Avatar PrincipalID:string Name:string Value:text --no-migration
+
+rails generate scaffold Friend PrincipalID:string Friend:string Flags:string Offered:string --no-migration
+
+rails generate scaffold GridUser HomeRegionID:string HomePosition:string HomeLookAt:string LastRegionID:string LastPosition:string LastLookAt:string Online:string Login:string Logout:string --no-migration
+
+rails generate scaffold Presence UserID:string RegionID:string SessionID:string SecureSessionID:string LastSeen:datetime --no-migration
+
+rails generate scaffold UserAccount PrincipalID:string ScopeID:string FirstName:string LastName:string Email:string ServiceURLs:text Created:integer UserLevel:integer UserFlags:integer UserTitle:string active:integer --no-migration
+
+rails generate scaffold Asset name:string description:string assetType:integer local:boolean temporary:boolean data:binary create_time:integer access_time:integer asset_flags:integer CreatorID:string --no-migration
+
+rails generate scaffold Auth passwordHash:string passwordSalt:string webLoginKey:string accountType:string --no-migration
+
+rails generate scaffold Bakedterrain RegionUUID:string Revision:integer Heightfield:binary --no-migration
+
+rails generate scaffold Classified creatoruuid:string creationdate:integer expirationdate:integer category:string name:string description:text parceluuid:string parentestate:integer snapshotuuid:string simname:string posglobal:string parcelname:string classifiedflags:integer priceforlisting:integer --no-migration
+
+rails generate scaffold EstateGroup EstateID:integer uuid:string --no-migration
+
+rails generate scaffold EstateManager EstateID:integer uuid:string --no-migration
+
+rails generate scaffold EstateMap EstateID:integer --no-migration
+
+rails generate scaffold EstateSetting EstateName:string AbuseEmailToEstateOwner:integer DenyAnonymous:integer ResetHomeOnTeleport:integer FixedSun:integer DenyTransacted:integer BlockDwell:integer DenyIdentified:integer AllowVoice:integer UseGlobalTime:integer PricePerMeter:integer TaxFree:integer AllowDirectTeleport:integer RedirectGridX:integer RedirectGridY:integer ParentEstateID:integer SunPosition:float EstateSkipScripts:integer BillableFactor:float PublicAccess:integer AbuseEmail:string EstateOwner:string DenyMinors:integer AllowLandmark:integer AllowParcelChanges:integer AllowSetHome:integer --no-migration
+
+rails generate scaffold EstateUser EstateID:integer uuid:string --no-migration
+
+rails generate scaffold Estateban EstateID:integer bannedUUID:string bannedIp:string bannedIpHostMask:string bannedNameMask:string --no-migration
+
+rails generate scaffold HgTravelingDatum UserID:string GridExternalName:string ServiceToken:string ClientIPAddress:string MyIPAddress:string TMStamp:datetime --no-migration
+
+rails generate scaffold ImOffline PrincipalID:string FromID:string Message:text TMStamp:datetime --no-migration
+
+rails generate scaffold Inventoryfolder folderName:string type:integer version:integer agentID:string parentFolderID:string --no-migration
+
+rails generate scaffold Inventoryitem assetID:string assetType:integer inventoryName:string inventoryDescription:string inventoryNextPermissions:integer inventoryCurrentPermissions:integer invType:integer creatorID:string inventoryBasePermissions:integer inventoryEveryOnePermissions:integer salePrice:integer saleType:integer creationDate:integer groupID:string groupOwned:integer flags:integer inventoryGroupPermissions:integer avatarID:string parentFolderID:string --no-migration
+
+rails generate scaffold Land RegionUUID:string LocalLandID:integer Bitmap:binary Name:string Description:string OwnerUUID:string IsGroupOwned:integer Area:integer AuctionID:integer Category:integer ClaimDate:integer ClaimPrice:integer GroupUUID:string SalePrice:integer LandStatus:integer LandFlags:integer LandingType:integer MediaAutoScale:integer MediaTextureUUID:string MediaURL:string MusicURL:string PassHours:float PassPrice:integer SnapshotUUID:string UserLocationX:float UserLocationY:float UserLocationZ:float UserLookAtX:float UserLookAtY:float UserLookAtZ:float AuthbuyerID:string OtherCleanTime:integer Dwell:integer MediaType:string MediaDescription:string MediaSize:string MediaLoop:boolean ObscureMusic:boolean ObscureMedia:boolean SeeAVs:integer AnyAVSounds:integer GroupAVSounds:integer --no-migration
+
+rails generate scaffold Landaccesslist LandUUID:string AccessUUID:string Flags:integer Expires:integer --no-migration
+
+rails generate scaffold Migration name:string version:integer --no-migration
+
+rails generate scaffold OsGroupsGroup Location:string Name:string Charter:text InsigniaID:string FounderID:string MembershipFee:integer OpenEnrollment:string ShowInList:integer AllowPublish:integer MaturePublish:integer OwnerRoleID:string --no-migration
+
+rails generate scaffold OsGroupsInvite GroupID:string RoleID:string PrincipalID:string TMStamp:datetime --no-migration
+
+rails generate scaffold OsGroupsMembership GroupID:string PrincipalID:string SelectedRoleID:string Contribution:integer ListInProfile:integer AcceptNotices:integer AccessToken:string --no-migration
+
+rails generate scaffold OsGroupsNotice GroupID:string TMStamp:integer FromName:string Subject:string Message:text HasAttachment:integer AttachmentType:integer AttachmentName:string AttachmentItemID:string AttachmentOwnerID:string --no-migration
+
+rails generate scaffold OsGroupsPrincipal ActiveGroupID:string --no-migration
+
+rails generate scaffold OsGroupsRolemembership GroupID:string RoleID:string PrincipalID:string --no-migration
+
+rails generate scaffold OsGroupsRole GroupID:string RoleID:string Name:string Description:string Title:string Powers:bigint --no-migration
+
+rails generate scaffold Primitem invType:integer assetType:integer name:string description:string creationDate:bigint nextPermissions:integer currentPermissions:integer basePermissions:integer everyonePermissions:integer groupPermissions:integer flags:integer primID:string assetID:string parentFolderID:string CreatorID:string ownerID:string groupID:string lastOwnerID:string --no-migration
+
+rails generate scaffold Prim CreationDate:integer Name:string Text:string Description:string SitName:string TouchName:string ObjectFlags:integer OwnerMask:integer NextOwnerMask:integer GroupMask:integer EveryoneMask:integer BaseMask:integer PositionX:float PositionY:float PositionZ:float GroupPositionX:float GroupPositionY:float GroupPositionZ:float VelocityX:float VelocityY:float VelocityZ:float AngularVelocityX:float AngularVelocityY:float AngularVelocityZ:float AccelerationX:float AccelerationY:float AccelerationZ:float RotationX:float RotationY:float RotationZ:float RotationW:float SitTargetOffsetX:float SitTargetOffsetY:float SitTargetOffsetZ:float SitTargetOrientW:float SitTargetOrientX:float SitTargetOrientY:float SitTargetOrientZ:float RegionUUID:string CreatorID:string OwnerID:string GroupID:string LastOwnerID:string SceneGroupID:string PayPrice:integer PayButton1:integer PayButton2:integer PayButton3:integer PayButton4:integer LoopedSound:string LoopedSoundGain:float TextureAnimation:binary OmegaX:float OmegaY:float OmegaZ:float CameraEyeOffsetX:float CameraEyeOffsetY:float CameraEyeOffsetZ:float CameraAtOffsetX:float CameraAtOffsetY:float CameraAtOffsetZ:float ForceMouselook:integer ScriptAccessPin:integer AllowedDrop:integer DieAtEdge:integer SalePrice:integer SaleType:integer ColorR:integer ColorG:integer ColorB:integer ColorA:integer ParticleSystem:binary ClickAction:integer Material:integer CollisionSound:string CollisionSoundVolume:float LinkNumber:integer PassTouches:integer MediaURL:string DynAttrs:text PhysicsShapeType:integer Density:float GravityModifier:float Friction:float Restitution:float KeyframeMotion:binary AttachedPosX:float AttachedPosY:float AttachedPosZ:float PassCollisions:integer Vehicle:text RotationAxisLocks:integer RezzerID:string --no-migration
+
+rails generate scaffold Primshape Shape:integer ScaleX:float ScaleY:float ScaleZ:float PCode:integer PathBegin:integer PathEnd:integer PathScaleX:integer PathScaleY:integer PathShearX:integer PathShearY:integer PathSkew:integer PathCurve:integer PathRadiusOffset:integer PathRevolutions:integer PathTaperX:integer PathTaperY:integer PathTwist:integer PathTwistBegin:integer ProfileBegin:integer ProfileEnd:integer ProfileCurve:integer ProfileHollow:integer State:integer Texture:binary ExtraParams:binary Media:text LastAttachPoint:integer --no-migration
+
+rails generate scaffold Profile profilePartner:string profileAllowPublish:binary profileMaturePublish:binary profileURL:string profileWantToMask:integer profileWantToText:text profileSkillsMask:integer profileSkillsText:text profileLanguages:text profileImage:string profileAboutText:text profileFirstImage:string profileFirstText:text --no-migration
+
+rails generate scaffold ProfileClassified creatoruuid:string creationdate:integer expirationdate:integer category:string name:string description:text parceluuid:string parentestate:integer snapshotuuid:string simname:string posglobal:string parcelname:string classifiedflags:integer priceforlisting:integer --no-migration
+
+rails generate scaffold ProfileNote useruuid:string targetuuid:string notes:text --no-migration
+
+rails generate scaffold ProfilePick creatoruuid:string toppick:string parceluuid:string name:string description:text snapshotuuid:string user:string originalname:string simname:string posglobal:string sortorder:integer enabled:string --no-migration
+
+rails generate scaffold ProfileSetting imviaemail:string visible:string email:string --no-migration
+
+rails generate scaffold Regionban regionUUID:string bannedUUID:string bannedIp:string bannedIpHostMask:string --no-migration
+
+rails generate scaffold Regionenvironment llsd_settings:text --no-migration
+
+rails generate scaffold Regionextra RegionID:string Name:string value:text --no-migration
+
+rails generate scaffold Region regionHandle:bigint regionName:string regionRecvKey:string regionSendKey:string regionSecret:string regionDataURI:string serverIP:string serverPort:integer serverURI:string locX:integer locY:integer locZ:integer eastOverrideHandle:bigint westOverrideHandle:bigint southOverrideHandle:bigint northOverrideHandle:bigint regionAssetURI:string regionAssetRecvKey:string regionAssetSendKey:string regionUserURI:string regionUserRecvKey:string regionUserSendKey:string regionMapTexture:string serverHttpPort:integer serverRemotingPort:integer owner_uuid:string originUUID:string access:integer ScopeID:string sizeX:integer sizeY:integer flags:integer last_seen:integer PrincipalID:string Token:string parcelMapTexture:string --no-migration
+
+rails generate scaffold Regionsetting block_terraform:integer block_fly:integer allow_damage:integer restrict_pushing:integer allow_land_resell:integer allow_land_join_divide:integer block_show_in_search:integer agent_limit:integer object_bonus:float maturity:integer disable_scripts:integer disable_collisions:integer disable_physics:integer terrain_texture_1:string terrain_texture_2:string terrain_texture_3:string terrain_texture_4:string elevation_1_nw:float elevation_2_nw:float elevation_1_ne:float elevation_2_ne:float elevation_1_se:float elevation_2_se:float elevation_1_sw:float elevation_2_sw:float water_height:float terrain_raise_limit:float terrain_lower_limit:float use_estate_sun:integer fixed_sun:integer sun_position:float covenant:string Sandbox:integer sunvectorx:float sunvectory:float sunvectorz:float loaded_creation:references loaded_creation_datetime:integer map_tile_ID:string TelehubObject:string parcel_tile_ID:string covenant_datetime:integer block_search:integer casino:integer --no-migration
+
+rails generate scaffold Regionwindlight water_color_r:float water_color_g:float water_color_b:float water_fog_density_exponent:float underwater_fog_modifier:float reflection_wavelet_scale_1:float reflection_wavelet_scale_2:float reflection_wavelet_scale_3:float fresnel_scale:float fresnel_offset:float refract_scale_above:float refract_scale_below:float blur_multiplier:float big_wave_direction_x:float big_wave_direction_y:float little_wave_direction_x:float little_wave_direction_y:float normal_map_texture:string horizon_r:float horizon_g:float horizon_b:float horizon_i:float haze_horizon:float blue_density_r:float blue_density_g:float blue_density_b:float blue_density_i:float haze_density:float density_multiplier:float distance_multiplier:float max_altitude:integer sun_moon_color_r:float sun_moon_color_g:float sun_moon_color_b:float sun_moon_color_i:float sun_moon_position:float ambient_r:float ambient_g:float ambient_b:float ambient_i:float east_angle:float sun_glow_focus:float sun_glow_size:float scene_gamma:float star_brightness:float cloud_color_r:float cloud_color_g:float cloud_color_b:float cloud_color_i:float cloud_x:float cloud_y:float cloud_density:float cloud_coverage:float cloud_scale:float cloud_detail_x:float cloud_detail_y:float cloud_detail_density:float cloud_scroll_x:float cloud_scroll_x_lock:boolean cloud_scroll_y:float cloud_scroll_y_lock:boolean draw_classic_clouds:boolean --no-migration
+
+rails generate scaffold SpawnPoint RegionID:string Yaw:float Pitch:float Distance:float --no-migration
+
+rails generate scaffold Terrain RegionUUID:string Revision:integer Heightfield:binary --no-migration
+
+rails generate scaffold Token UUID:string token:string validity:datetime --no-migration
+
+rails generate scaffold Userdatum UserId:string TagId:string DataKey:string DataVal:string --no-migration
+
+rails generate scaffold Usernote useruuid:string targetuuid:string notes:text --no-migration
+
+rails generate scaffold Userpick creatoruuid:string toppick:string parceluuid:string name:string description:text snapshotuuid:string user:string originalname:string simname:string posglobal:string sortorder:integer enabled:string gatekeeper:string --no-migration
+
+rails generate scaffold Userprofile profilePartner:string profileAllowPublish:binary profileMaturePublish:binary profileURL:string profileWantToMask:integer profileWantToText:text profileSkillsMask:integer profileSkillsText:text profileLanguages:text profileImage:string profileAboutText:text profileFirstImage:string profileFirstText:text --no-migration
+
+rails generate scaffold Usersetting imviaemail:string visible:string email:string --no-migration
+
+rails generate scaffold WiOfflineMsg uuid:string message:text --no-migration
+

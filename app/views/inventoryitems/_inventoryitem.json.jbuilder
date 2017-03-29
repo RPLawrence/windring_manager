@@ -1,0 +1,2 @@
+json.extract! inventoryitem, :id, :assetID, :assetType, :inventoryName, :inventoryDescription, :inventoryNextPermissions, :inventoryCurrentPermissions, :invType, :creatorID, :inventoryBasePermissions, :inventoryEveryOnePermissions, :salePrice, :saleType, :creationDate, :groupID, :groupOwned, :flags, :inventoryGroupPermissions, :avatarID, :parentFolderID, :created_at, :updated_at
+json.url inventoryitem_url(inventoryitem, format: :json)

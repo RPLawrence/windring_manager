@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Landaccesslists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Landuuid</th>
+      <th>Accessuuid</th>
+      <th>Flags</th>
+      <th>Expires</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @landaccesslists.each do |landaccesslist| %>
+      <tr>
+        <td><%= landaccesslist.LandUUID %></td>
+        <td><%= landaccesslist.AccessUUID %></td>
+        <td><%= landaccesslist.Flags %></td>
+        <td><%= landaccesslist.Expires %></td>
+        <td><%= link_to 'Show', landaccesslist %></td>
+        <td><%= link_to 'Edit', edit_landaccesslist_path(landaccesslist) %></td>
+        <td><%= link_to 'Destroy', landaccesslist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Landaccesslist', new_landaccesslist_path %>

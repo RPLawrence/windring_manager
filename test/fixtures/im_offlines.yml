@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PrincipalID: MyString
+  FromID: MyString
+  Message: MyText
+  TMStamp: 2017-03-29 17:44:22
+
+two:
+  PrincipalID: MyString
+  FromID: MyString
+  Message: MyText
+  TMStamp: 2017-03-29 17:44:22

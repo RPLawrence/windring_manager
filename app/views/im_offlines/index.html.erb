@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Im Offlines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Principalid</th>
+      <th>Fromid</th>
+      <th>Message</th>
+      <th>Tmstamp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @im_offlines.each do |im_offline| %>
+      <tr>
+        <td><%= im_offline.PrincipalID %></td>
+        <td><%= im_offline.FromID %></td>
+        <td><%= im_offline.Message %></td>
+        <td><%= im_offline.TMStamp %></td>
+        <td><%= link_to 'Show', im_offline %></td>
+        <td><%= link_to 'Edit', edit_im_offline_path(im_offline) %></td>
+        <td><%= link_to 'Destroy', im_offline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Im Offline', new_im_offline_path %>

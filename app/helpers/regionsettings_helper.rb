@@ -1,0 +1,2 @@
+module RegionsettingsHelper
+end

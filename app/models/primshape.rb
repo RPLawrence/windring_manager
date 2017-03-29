@@ -1,0 +1,2 @@
+class Primshape < ApplicationRecord
+end

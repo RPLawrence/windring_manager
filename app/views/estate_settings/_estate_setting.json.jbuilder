@@ -1,0 +1,2 @@
+json.extract! estate_setting, :id, :EstateName, :AbuseEmailToEstateOwner, :DenyAnonymous, :ResetHomeOnTeleport, :FixedSun, :DenyTransacted, :BlockDwell, :DenyIdentified, :AllowVoice, :UseGlobalTime, :PricePerMeter, :TaxFree, :AllowDirectTeleport, :RedirectGridX, :RedirectGridY, :ParentEstateID, :SunPosition, :EstateSkipScripts, :BillableFactor, :PublicAccess, :AbuseEmail, :EstateOwner, :DenyMinors, :AllowLandmark, :AllowParcelChanges, :AllowSetHome, :created_at, :updated_at
+json.url estate_setting_url(estate_setting, format: :json)

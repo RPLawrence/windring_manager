@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Foldername:</strong>
+  <%= @inventoryfolder.folderName %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @inventoryfolder.type %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @inventoryfolder.version %>
+</p>
+
+<p>
+  <strong>Agentid:</strong>
+  <%= @inventoryfolder.agentID %>
+</p>
+
+<p>
+  <strong>Parentfolderid:</strong>
+  <%= @inventoryfolder.parentFolderID %>
+</p>
+
+<%= link_to 'Edit', edit_inventoryfolder_path(@inventoryfolder) %> |
+<%= link_to 'Back', inventoryfolders_path %>

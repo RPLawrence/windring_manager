@@ -1,0 +1,2 @@
+module RegionbansHelper
+end

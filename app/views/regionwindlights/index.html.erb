@@ -1,0 +1,149 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Regionwindlights</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Water color r</th>
+      <th>Water color g</th>
+      <th>Water color b</th>
+      <th>Water fog density exponent</th>
+      <th>Underwater fog modifier</th>
+      <th>Reflection wavelet scale 1</th>
+      <th>Reflection wavelet scale 2</th>
+      <th>Reflection wavelet scale 3</th>
+      <th>Fresnel scale</th>
+      <th>Fresnel offset</th>
+      <th>Refract scale above</th>
+      <th>Refract scale below</th>
+      <th>Blur multiplier</th>
+      <th>Big wave direction x</th>
+      <th>Big wave direction y</th>
+      <th>Little wave direction x</th>
+      <th>Little wave direction y</th>
+      <th>Normal map texture</th>
+      <th>Horizon r</th>
+      <th>Horizon g</th>
+      <th>Horizon b</th>
+      <th>Horizon i</th>
+      <th>Haze horizon</th>
+      <th>Blue density r</th>
+      <th>Blue density g</th>
+      <th>Blue density b</th>
+      <th>Blue density i</th>
+      <th>Haze density</th>
+      <th>Density multiplier</th>
+      <th>Distance multiplier</th>
+      <th>Max altitude</th>
+      <th>Sun moon color r</th>
+      <th>Sun moon color g</th>
+      <th>Sun moon color b</th>
+      <th>Sun moon color i</th>
+      <th>Sun moon position</th>
+      <th>Ambient r</th>
+      <th>Ambient g</th>
+      <th>Ambient b</th>
+      <th>Ambient i</th>
+      <th>East angle</th>
+      <th>Sun glow focus</th>
+      <th>Sun glow size</th>
+      <th>Scene gamma</th>
+      <th>Star brightness</th>
+      <th>Cloud color r</th>
+      <th>Cloud color g</th>
+      <th>Cloud color b</th>
+      <th>Cloud color i</th>
+      <th>Cloud x</th>
+      <th>Cloud y</th>
+      <th>Cloud density</th>
+      <th>Cloud coverage</th>
+      <th>Cloud scale</th>
+      <th>Cloud detail x</th>
+      <th>Cloud detail y</th>
+      <th>Cloud detail density</th>
+      <th>Cloud scroll x</th>
+      <th>Cloud scroll x lock</th>
+      <th>Cloud scroll y</th>
+      <th>Cloud scroll y lock</th>
+      <th>Draw classic clouds</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regionwindlights.each do |regionwindlight| %>
+      <tr>
+        <td><%= regionwindlight.water_color_r %></td>
+        <td><%= regionwindlight.water_color_g %></td>
+        <td><%= regionwindlight.water_color_b %></td>
+        <td><%= regionwindlight.water_fog_density_exponent %></td>
+        <td><%= regionwindlight.underwater_fog_modifier %></td>
+        <td><%= regionwindlight.reflection_wavelet_scale_1 %></td>
+        <td><%= regionwindlight.reflection_wavelet_scale_2 %></td>
+        <td><%= regionwindlight.reflection_wavelet_scale_3 %></td>
+        <td><%= regionwindlight.fresnel_scale %></td>
+        <td><%= regionwindlight.fresnel_offset %></td>
+        <td><%= regionwindlight.refract_scale_above %></td>
+        <td><%= regionwindlight.refract_scale_below %></td>
+        <td><%= regionwindlight.blur_multiplier %></td>
+        <td><%= regionwindlight.big_wave_direction_x %></td>
+        <td><%= regionwindlight.big_wave_direction_y %></td>
+        <td><%= regionwindlight.little_wave_direction_x %></td>
+        <td><%= regionwindlight.little_wave_direction_y %></td>
+        <td><%= regionwindlight.normal_map_texture %></td>
+        <td><%= regionwindlight.horizon_r %></td>
+        <td><%= regionwindlight.horizon_g %></td>
+        <td><%= regionwindlight.horizon_b %></td>
+        <td><%= regionwindlight.horizon_i %></td>
+        <td><%= regionwindlight.haze_horizon %></td>
+        <td><%= regionwindlight.blue_density_r %></td>
+        <td><%= regionwindlight.blue_density_g %></td>
+        <td><%= regionwindlight.blue_density_b %></td>
+        <td><%= regionwindlight.blue_density_i %></td>
+        <td><%= regionwindlight.haze_density %></td>
+        <td><%= regionwindlight.density_multiplier %></td>
+        <td><%= regionwindlight.distance_multiplier %></td>
+        <td><%= regionwindlight.max_altitude %></td>
+        <td><%= regionwindlight.sun_moon_color_r %></td>
+        <td><%= regionwindlight.sun_moon_color_g %></td>
+        <td><%= regionwindlight.sun_moon_color_b %></td>
+        <td><%= regionwindlight.sun_moon_color_i %></td>
+        <td><%= regionwindlight.sun_moon_position %></td>
+        <td><%= regionwindlight.ambient_r %></td>
+        <td><%= regionwindlight.ambient_g %></td>
+        <td><%= regionwindlight.ambient_b %></td>
+        <td><%= regionwindlight.ambient_i %></td>
+        <td><%= regionwindlight.east_angle %></td>
+        <td><%= regionwindlight.sun_glow_focus %></td>
+        <td><%= regionwindlight.sun_glow_size %></td>
+        <td><%= regionwindlight.scene_gamma %></td>
+        <td><%= regionwindlight.star_brightness %></td>
+        <td><%= regionwindlight.cloud_color_r %></td>
+        <td><%= regionwindlight.cloud_color_g %></td>
+        <td><%= regionwindlight.cloud_color_b %></td>
+        <td><%= regionwindlight.cloud_color_i %></td>
+        <td><%= regionwindlight.cloud_x %></td>
+        <td><%= regionwindlight.cloud_y %></td>
+        <td><%= regionwindlight.cloud_density %></td>
+        <td><%= regionwindlight.cloud_coverage %></td>
+        <td><%= regionwindlight.cloud_scale %></td>
+        <td><%= regionwindlight.cloud_detail_x %></td>
+        <td><%= regionwindlight.cloud_detail_y %></td>
+        <td><%= regionwindlight.cloud_detail_density %></td>
+        <td><%= regionwindlight.cloud_scroll_x %></td>
+        <td><%= regionwindlight.cloud_scroll_x_lock %></td>
+        <td><%= regionwindlight.cloud_scroll_y %></td>
+        <td><%= regionwindlight.cloud_scroll_y_lock %></td>
+        <td><%= regionwindlight.draw_classic_clouds %></td>
+        <td><%= link_to 'Show', regionwindlight %></td>
+        <td><%= link_to 'Edit', edit_regionwindlight_path(regionwindlight) %></td>
+        <td><%= link_to 'Destroy', regionwindlight, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Regionwindlight', new_regionwindlight_path %>

@@ -1,0 +1,32 @@
+<%= form_for(bakedterrain) do |f| %>
+  <% if bakedterrain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bakedterrain.errors.count, "error") %> prohibited this bakedterrain from being saved:</h2>
+
+      <ul>
+      <% bakedterrain.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :RegionUUID %>
+    <%= f.text_field :RegionUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Revision %>
+    <%= f.number_field :Revision %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Heightfield %>
+    <%= f.text_field :Heightfield %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

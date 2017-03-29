@@ -1,0 +1,107 @@
+<%= form_for(primitem) do |f| %>
+  <% if primitem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(primitem.errors.count, "error") %> prohibited this primitem from being saved:</h2>
+
+      <ul>
+      <% primitem.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :invType %>
+    <%= f.number_field :invType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assetType %>
+    <%= f.number_field :assetType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :creationDate %>
+    <%= f.text_field :creationDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nextPermissions %>
+    <%= f.number_field :nextPermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :currentPermissions %>
+    <%= f.number_field :currentPermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :basePermissions %>
+    <%= f.number_field :basePermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :everyonePermissions %>
+    <%= f.number_field :everyonePermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :groupPermissions %>
+    <%= f.number_field :groupPermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :flags %>
+    <%= f.number_field :flags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :primID %>
+    <%= f.text_field :primID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assetID %>
+    <%= f.text_field :assetID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parentFolderID %>
+    <%= f.text_field :parentFolderID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CreatorID %>
+    <%= f.text_field :CreatorID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ownerID %>
+    <%= f.text_field :ownerID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :groupID %>
+    <%= f.text_field :groupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastOwnerID %>
+    <%= f.text_field :lastOwnerID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

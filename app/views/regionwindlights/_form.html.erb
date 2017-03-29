@@ -1,0 +1,327 @@
+<%= form_for(regionwindlight) do |f| %>
+  <% if regionwindlight.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(regionwindlight.errors.count, "error") %> prohibited this regionwindlight from being saved:</h2>
+
+      <ul>
+      <% regionwindlight.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :water_color_r %>
+    <%= f.text_field :water_color_r %>
+  </div>
+
+  <div class="field">
+    <%= f.label :water_color_g %>
+    <%= f.text_field :water_color_g %>
+  </div>
+
+  <div class="field">
+    <%= f.label :water_color_b %>
+    <%= f.text_field :water_color_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :water_fog_density_exponent %>
+    <%= f.text_field :water_fog_density_exponent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :underwater_fog_modifier %>
+    <%= f.text_field :underwater_fog_modifier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :reflection_wavelet_scale_1 %>
+    <%= f.text_field :reflection_wavelet_scale_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :reflection_wavelet_scale_2 %>
+    <%= f.text_field :reflection_wavelet_scale_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :reflection_wavelet_scale_3 %>
+    <%= f.text_field :reflection_wavelet_scale_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fresnel_scale %>
+    <%= f.text_field :fresnel_scale %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fresnel_offset %>
+    <%= f.text_field :fresnel_offset %>
+  </div>
+
+  <div class="field">
+    <%= f.label :refract_scale_above %>
+    <%= f.text_field :refract_scale_above %>
+  </div>
+
+  <div class="field">
+    <%= f.label :refract_scale_below %>
+    <%= f.text_field :refract_scale_below %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blur_multiplier %>
+    <%= f.text_field :blur_multiplier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :big_wave_direction_x %>
+    <%= f.text_field :big_wave_direction_x %>
+  </div>
+
+  <div class="field">
+    <%= f.label :big_wave_direction_y %>
+    <%= f.text_field :big_wave_direction_y %>
+  </div>
+
+  <div class="field">
+    <%= f.label :little_wave_direction_x %>
+    <%= f.text_field :little_wave_direction_x %>
+  </div>
+
+  <div class="field">
+    <%= f.label :little_wave_direction_y %>
+    <%= f.text_field :little_wave_direction_y %>
+  </div>
+
+  <div class="field">
+    <%= f.label :normal_map_texture %>
+    <%= f.text_field :normal_map_texture %>
+  </div>
+
+  <div class="field">
+    <%= f.label :horizon_r %>
+    <%= f.text_field :horizon_r %>
+  </div>
+
+  <div class="field">
+    <%= f.label :horizon_g %>
+    <%= f.text_field :horizon_g %>
+  </div>
+
+  <div class="field">
+    <%= f.label :horizon_b %>
+    <%= f.text_field :horizon_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :horizon_i %>
+    <%= f.text_field :horizon_i %>
+  </div>
+
+  <div class="field">
+    <%= f.label :haze_horizon %>
+    <%= f.text_field :haze_horizon %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blue_density_r %>
+    <%= f.text_field :blue_density_r %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blue_density_g %>
+    <%= f.text_field :blue_density_g %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blue_density_b %>
+    <%= f.text_field :blue_density_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blue_density_i %>
+    <%= f.text_field :blue_density_i %>
+  </div>
+
+  <div class="field">
+    <%= f.label :haze_density %>
+    <%= f.text_field :haze_density %>
+  </div>
+
+  <div class="field">
+    <%= f.label :density_multiplier %>
+    <%= f.text_field :density_multiplier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :distance_multiplier %>
+    <%= f.text_field :distance_multiplier %>
+  </div>
+
+  <div class="field">
+    <%= f.label :max_altitude %>
+    <%= f.number_field :max_altitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_moon_color_r %>
+    <%= f.text_field :sun_moon_color_r %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_moon_color_g %>
+    <%= f.text_field :sun_moon_color_g %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_moon_color_b %>
+    <%= f.text_field :sun_moon_color_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_moon_color_i %>
+    <%= f.text_field :sun_moon_color_i %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_moon_position %>
+    <%= f.text_field :sun_moon_position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ambient_r %>
+    <%= f.text_field :ambient_r %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ambient_g %>
+    <%= f.text_field :ambient_g %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ambient_b %>
+    <%= f.text_field :ambient_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ambient_i %>
+    <%= f.text_field :ambient_i %>
+  </div>
+
+  <div class="field">
+    <%= f.label :east_angle %>
+    <%= f.text_field :east_angle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_glow_focus %>
+    <%= f.text_field :sun_glow_focus %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sun_glow_size %>
+    <%= f.text_field :sun_glow_size %>
+  </div>
+
+  <div class="field">
+    <%= f.label :scene_gamma %>
+    <%= f.text_field :scene_gamma %>
+  </div>
+
+  <div class="field">
+    <%= f.label :star_brightness %>
+    <%= f.text_field :star_brightness %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_color_r %>
+    <%= f.text_field :cloud_color_r %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_color_g %>
+    <%= f.text_field :cloud_color_g %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_color_b %>
+    <%= f.text_field :cloud_color_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_color_i %>
+    <%= f.text_field :cloud_color_i %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_x %>
+    <%= f.text_field :cloud_x %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_y %>
+    <%= f.text_field :cloud_y %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_density %>
+    <%= f.text_field :cloud_density %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_coverage %>
+    <%= f.text_field :cloud_coverage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_scale %>
+    <%= f.text_field :cloud_scale %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_detail_x %>
+    <%= f.text_field :cloud_detail_x %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_detail_y %>
+    <%= f.text_field :cloud_detail_y %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_detail_density %>
+    <%= f.text_field :cloud_detail_density %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_scroll_x %>
+    <%= f.text_field :cloud_scroll_x %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_scroll_x_lock %>
+    <%= f.check_box :cloud_scroll_x_lock %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_scroll_y %>
+    <%= f.text_field :cloud_scroll_y %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cloud_scroll_y_lock %>
+    <%= f.check_box :cloud_scroll_y_lock %>
+  </div>
+
+  <div class="field">
+    <%= f.label :draw_classic_clouds %>
+    <%= f.check_box :draw_classic_clouds %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class EstateMap < ApplicationRecord
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RegionID: MyString
+  Name: MyString
+  value: MyText
+
+two:
+  RegionID: MyString
+  Name: MyString
+  value: MyText

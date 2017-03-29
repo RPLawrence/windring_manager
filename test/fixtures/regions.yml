@@ -1,0 +1,77 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  regionHandle: 
+  regionName: MyString
+  regionRecvKey: MyString
+  regionSendKey: MyString
+  regionSecret: MyString
+  regionDataURI: MyString
+  serverIP: MyString
+  serverPort: 1
+  serverURI: MyString
+  locX: 1
+  locY: 1
+  locZ: 1
+  eastOverrideHandle: 
+  westOverrideHandle: 
+  southOverrideHandle: 
+  northOverrideHandle: 
+  regionAssetURI: MyString
+  regionAssetRecvKey: MyString
+  regionAssetSendKey: MyString
+  regionUserURI: MyString
+  regionUserRecvKey: MyString
+  regionUserSendKey: MyString
+  regionMapTexture: MyString
+  serverHttpPort: 1
+  serverRemotingPort: 1
+  owner_uuid: MyString
+  originUUID: MyString
+  access: 1
+  ScopeID: MyString
+  sizeX: 1
+  sizeY: 1
+  flags: 1
+  last_seen: 1
+  PrincipalID: MyString
+  Token: MyString
+  parcelMapTexture: MyString
+
+two:
+  regionHandle: 
+  regionName: MyString
+  regionRecvKey: MyString
+  regionSendKey: MyString
+  regionSecret: MyString
+  regionDataURI: MyString
+  serverIP: MyString
+  serverPort: 1
+  serverURI: MyString
+  locX: 1
+  locY: 1
+  locZ: 1
+  eastOverrideHandle: 
+  westOverrideHandle: 
+  southOverrideHandle: 
+  northOverrideHandle: 
+  regionAssetURI: MyString
+  regionAssetRecvKey: MyString
+  regionAssetSendKey: MyString
+  regionUserURI: MyString
+  regionUserRecvKey: MyString
+  regionUserSendKey: MyString
+  regionMapTexture: MyString
+  serverHttpPort: 1
+  serverRemotingPort: 1
+  owner_uuid: MyString
+  originUUID: MyString
+  access: 1
+  ScopeID: MyString
+  sizeX: 1
+  sizeY: 1
+  flags: 1
+  last_seen: 1
+  PrincipalID: MyString
+  Token: MyString
+  parcelMapTexture: MyString

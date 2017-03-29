@@ -1,0 +1,2 @@
+module WiOfflineMsgsHelper
+end

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creatoruuid: MyString
+  creationdate: 1
+  expirationdate: 1
+  category: MyString
+  name: MyString
+  description: MyText
+  parceluuid: MyString
+  parentestate: 1
+  snapshotuuid: MyString
+  simname: MyString
+  posglobal: MyString
+  parcelname: MyString
+  classifiedflags: 1
+  priceforlisting: 1
+
+two:
+  creatoruuid: MyString
+  creationdate: 1
+  expirationdate: 1
+  category: MyString
+  name: MyString
+  description: MyText
+  parceluuid: MyString
+  parentestate: 1
+  snapshotuuid: MyString
+  simname: MyString
+  posglobal: MyString
+  parcelname: MyString
+  classifiedflags: 1
+  priceforlisting: 1

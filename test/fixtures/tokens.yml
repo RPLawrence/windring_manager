@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UUID: MyString
+  token: MyString
+  validity: 2017-03-29 17:44:54
+
+two:
+  UUID: MyString
+  token: MyString
+  validity: 2017-03-29 17:44:54

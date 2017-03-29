@@ -1,0 +1,112 @@
+<%= form_for(inventoryitem) do |f| %>
+  <% if inventoryitem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(inventoryitem.errors.count, "error") %> prohibited this inventoryitem from being saved:</h2>
+
+      <ul>
+      <% inventoryitem.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :assetID %>
+    <%= f.text_field :assetID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assetType %>
+    <%= f.number_field :assetType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryName %>
+    <%= f.text_field :inventoryName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryDescription %>
+    <%= f.text_field :inventoryDescription %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryNextPermissions %>
+    <%= f.number_field :inventoryNextPermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryCurrentPermissions %>
+    <%= f.number_field :inventoryCurrentPermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :invType %>
+    <%= f.number_field :invType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :creatorID %>
+    <%= f.text_field :creatorID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryBasePermissions %>
+    <%= f.number_field :inventoryBasePermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryEveryOnePermissions %>
+    <%= f.number_field :inventoryEveryOnePermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :salePrice %>
+    <%= f.number_field :salePrice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :saleType %>
+    <%= f.number_field :saleType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :creationDate %>
+    <%= f.number_field :creationDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :groupID %>
+    <%= f.text_field :groupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :groupOwned %>
+    <%= f.number_field :groupOwned %>
+  </div>
+
+  <div class="field">
+    <%= f.label :flags %>
+    <%= f.number_field :flags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inventoryGroupPermissions %>
+    <%= f.number_field :inventoryGroupPermissions %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avatarID %>
+    <%= f.text_field :avatarID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :parentFolderID %>
+    <%= f.text_field :parentFolderID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

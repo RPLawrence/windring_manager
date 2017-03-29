@@ -1,0 +1,109 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lands</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regionuuid</th>
+      <th>Locallandid</th>
+      <th>Bitmap</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Owneruuid</th>
+      <th>Isgroupowned</th>
+      <th>Area</th>
+      <th>Auctionid</th>
+      <th>Category</th>
+      <th>Claimdate</th>
+      <th>Claimprice</th>
+      <th>Groupuuid</th>
+      <th>Saleprice</th>
+      <th>Landstatus</th>
+      <th>Landflags</th>
+      <th>Landingtype</th>
+      <th>Mediaautoscale</th>
+      <th>Mediatextureuuid</th>
+      <th>Mediaurl</th>
+      <th>Musicurl</th>
+      <th>Passhours</th>
+      <th>Passprice</th>
+      <th>Snapshotuuid</th>
+      <th>Userlocationx</th>
+      <th>Userlocationy</th>
+      <th>Userlocationz</th>
+      <th>Userlookatx</th>
+      <th>Userlookaty</th>
+      <th>Userlookatz</th>
+      <th>Authbuyerid</th>
+      <th>Othercleantime</th>
+      <th>Dwell</th>
+      <th>Mediatype</th>
+      <th>Mediadescription</th>
+      <th>Mediasize</th>
+      <th>Medialoop</th>
+      <th>Obscuremusic</th>
+      <th>Obscuremedia</th>
+      <th>Seeavs</th>
+      <th>Anyavsounds</th>
+      <th>Groupavsounds</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lands.each do |land| %>
+      <tr>
+        <td><%= land.RegionUUID %></td>
+        <td><%= land.LocalLandID %></td>
+        <td><%= land.Bitmap %></td>
+        <td><%= land.Name %></td>
+        <td><%= land.Description %></td>
+        <td><%= land.OwnerUUID %></td>
+        <td><%= land.IsGroupOwned %></td>
+        <td><%= land.Area %></td>
+        <td><%= land.AuctionID %></td>
+        <td><%= land.Category %></td>
+        <td><%= land.ClaimDate %></td>
+        <td><%= land.ClaimPrice %></td>
+        <td><%= land.GroupUUID %></td>
+        <td><%= land.SalePrice %></td>
+        <td><%= land.LandStatus %></td>
+        <td><%= land.LandFlags %></td>
+        <td><%= land.LandingType %></td>
+        <td><%= land.MediaAutoScale %></td>
+        <td><%= land.MediaTextureUUID %></td>
+        <td><%= land.MediaURL %></td>
+        <td><%= land.MusicURL %></td>
+        <td><%= land.PassHours %></td>
+        <td><%= land.PassPrice %></td>
+        <td><%= land.SnapshotUUID %></td>
+        <td><%= land.UserLocationX %></td>
+        <td><%= land.UserLocationY %></td>
+        <td><%= land.UserLocationZ %></td>
+        <td><%= land.UserLookAtX %></td>
+        <td><%= land.UserLookAtY %></td>
+        <td><%= land.UserLookAtZ %></td>
+        <td><%= land.AuthbuyerID %></td>
+        <td><%= land.OtherCleanTime %></td>
+        <td><%= land.Dwell %></td>
+        <td><%= land.MediaType %></td>
+        <td><%= land.MediaDescription %></td>
+        <td><%= land.MediaSize %></td>
+        <td><%= land.MediaLoop %></td>
+        <td><%= land.ObscureMusic %></td>
+        <td><%= land.ObscureMedia %></td>
+        <td><%= land.SeeAVs %></td>
+        <td><%= land.AnyAVSounds %></td>
+        <td><%= land.GroupAVSounds %></td>
+        <td><%= link_to 'Show', land %></td>
+        <td><%= link_to 'Edit', edit_land_path(land) %></td>
+        <td><%= link_to 'Destroy', land, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Land', new_land_path %>

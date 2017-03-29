@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Estate Maps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estateid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estate_maps.each do |estate_map| %>
+      <tr>
+        <td><%= estate_map.EstateID %></td>
+        <td><%= link_to 'Show', estate_map %></td>
+        <td><%= link_to 'Edit', edit_estate_map_path(estate_map) %></td>
+        <td><%= link_to 'Destroy', estate_map, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estate Map', new_estate_map_path %>

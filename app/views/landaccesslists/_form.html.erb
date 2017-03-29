@@ -1,0 +1,37 @@
+<%= form_for(landaccesslist) do |f| %>
+  <% if landaccesslist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(landaccesslist.errors.count, "error") %> prohibited this landaccesslist from being saved:</h2>
+
+      <ul>
+      <% landaccesslist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :LandUUID %>
+    <%= f.text_field :LandUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AccessUUID %>
+    <%= f.text_field :AccessUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Flags %>
+    <%= f.number_field :Flags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Expires %>
+    <%= f.number_field :Expires %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class GridUser < ApplicationRecord
+end

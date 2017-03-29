@@ -1,0 +1,2 @@
+module EstateManagersHelper
+end

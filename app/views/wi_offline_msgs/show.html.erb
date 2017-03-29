@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @wi_offline_msg.uuid %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @wi_offline_msg.message %>
+</p>
+
+<%= link_to 'Edit', edit_wi_offline_msg_path(@wi_offline_msg) %> |
+<%= link_to 'Back', wi_offline_msgs_path %>

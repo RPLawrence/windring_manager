@@ -1,0 +1,67 @@
+<%= form_for(asset) do |f| %>
+  <% if asset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
+
+      <ul>
+      <% asset.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assetType %>
+    <%= f.number_field :assetType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :local %>
+    <%= f.check_box :local %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temporary %>
+    <%= f.check_box :temporary %>
+  </div>
+
+  <div class="field">
+    <%= f.label :data %>
+    <%= f.text_field :data %>
+  </div>
+
+  <div class="field">
+    <%= f.label :create_time %>
+    <%= f.number_field :create_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :access_time %>
+    <%= f.number_field :access_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :asset_flags %>
+    <%= f.number_field :asset_flags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CreatorID %>
+    <%= f.text_field :CreatorID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

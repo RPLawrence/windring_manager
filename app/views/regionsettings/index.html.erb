@@ -1,0 +1,113 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Regionsettings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Block terraform</th>
+      <th>Block fly</th>
+      <th>Allow damage</th>
+      <th>Restrict pushing</th>
+      <th>Allow land resell</th>
+      <th>Allow land join divide</th>
+      <th>Block show in search</th>
+      <th>Agent limit</th>
+      <th>Object bonus</th>
+      <th>Maturity</th>
+      <th>Disable scripts</th>
+      <th>Disable collisions</th>
+      <th>Disable physics</th>
+      <th>Terrain texture 1</th>
+      <th>Terrain texture 2</th>
+      <th>Terrain texture 3</th>
+      <th>Terrain texture 4</th>
+      <th>Elevation 1 nw</th>
+      <th>Elevation 2 nw</th>
+      <th>Elevation 1 ne</th>
+      <th>Elevation 2 ne</th>
+      <th>Elevation 1 se</th>
+      <th>Elevation 2 se</th>
+      <th>Elevation 1 sw</th>
+      <th>Elevation 2 sw</th>
+      <th>Water height</th>
+      <th>Terrain raise limit</th>
+      <th>Terrain lower limit</th>
+      <th>Use estate sun</th>
+      <th>Fixed sun</th>
+      <th>Sun position</th>
+      <th>Covenant</th>
+      <th>Sandbox</th>
+      <th>Sunvectorx</th>
+      <th>Sunvectory</th>
+      <th>Sunvectorz</th>
+      <th>Loaded creation</th>
+      <th>Loaded creation datetime</th>
+      <th>Map tile id</th>
+      <th>Telehubobject</th>
+      <th>Parcel tile id</th>
+      <th>Covenant datetime</th>
+      <th>Block search</th>
+      <th>Casino</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regionsettings.each do |regionsetting| %>
+      <tr>
+        <td><%= regionsetting.block_terraform %></td>
+        <td><%= regionsetting.block_fly %></td>
+        <td><%= regionsetting.allow_damage %></td>
+        <td><%= regionsetting.restrict_pushing %></td>
+        <td><%= regionsetting.allow_land_resell %></td>
+        <td><%= regionsetting.allow_land_join_divide %></td>
+        <td><%= regionsetting.block_show_in_search %></td>
+        <td><%= regionsetting.agent_limit %></td>
+        <td><%= regionsetting.object_bonus %></td>
+        <td><%= regionsetting.maturity %></td>
+        <td><%= regionsetting.disable_scripts %></td>
+        <td><%= regionsetting.disable_collisions %></td>
+        <td><%= regionsetting.disable_physics %></td>
+        <td><%= regionsetting.terrain_texture_1 %></td>
+        <td><%= regionsetting.terrain_texture_2 %></td>
+        <td><%= regionsetting.terrain_texture_3 %></td>
+        <td><%= regionsetting.terrain_texture_4 %></td>
+        <td><%= regionsetting.elevation_1_nw %></td>
+        <td><%= regionsetting.elevation_2_nw %></td>
+        <td><%= regionsetting.elevation_1_ne %></td>
+        <td><%= regionsetting.elevation_2_ne %></td>
+        <td><%= regionsetting.elevation_1_se %></td>
+        <td><%= regionsetting.elevation_2_se %></td>
+        <td><%= regionsetting.elevation_1_sw %></td>
+        <td><%= regionsetting.elevation_2_sw %></td>
+        <td><%= regionsetting.water_height %></td>
+        <td><%= regionsetting.terrain_raise_limit %></td>
+        <td><%= regionsetting.terrain_lower_limit %></td>
+        <td><%= regionsetting.use_estate_sun %></td>
+        <td><%= regionsetting.fixed_sun %></td>
+        <td><%= regionsetting.sun_position %></td>
+        <td><%= regionsetting.covenant %></td>
+        <td><%= regionsetting.Sandbox %></td>
+        <td><%= regionsetting.sunvectorx %></td>
+        <td><%= regionsetting.sunvectory %></td>
+        <td><%= regionsetting.sunvectorz %></td>
+        <td><%= regionsetting.loaded_creation %></td>
+        <td><%= regionsetting.loaded_creation_datetime %></td>
+        <td><%= regionsetting.map_tile_ID %></td>
+        <td><%= regionsetting.TelehubObject %></td>
+        <td><%= regionsetting.parcel_tile_ID %></td>
+        <td><%= regionsetting.covenant_datetime %></td>
+        <td><%= regionsetting.block_search %></td>
+        <td><%= regionsetting.casino %></td>
+        <td><%= link_to 'Show', regionsetting %></td>
+        <td><%= link_to 'Edit', edit_regionsetting_path(regionsetting) %></td>
+        <td><%= link_to 'Destroy', regionsetting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Regionsetting', new_regionsetting_path %>

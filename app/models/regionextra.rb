@@ -1,0 +1,2 @@
+class Regionextra < ApplicationRecord
+end

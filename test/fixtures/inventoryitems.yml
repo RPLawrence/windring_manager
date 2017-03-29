@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  assetID: MyString
+  assetType: 1
+  inventoryName: MyString
+  inventoryDescription: MyString
+  inventoryNextPermissions: 1
+  inventoryCurrentPermissions: 1
+  invType: 1
+  creatorID: MyString
+  inventoryBasePermissions: 1
+  inventoryEveryOnePermissions: 1
+  salePrice: 1
+  saleType: 1
+  creationDate: 1
+  groupID: MyString
+  groupOwned: 1
+  flags: 1
+  inventoryGroupPermissions: 1
+  avatarID: MyString
+  parentFolderID: MyString
+
+two:
+  assetID: MyString
+  assetType: 1
+  inventoryName: MyString
+  inventoryDescription: MyString
+  inventoryNextPermissions: 1
+  inventoryCurrentPermissions: 1
+  invType: 1
+  creatorID: MyString
+  inventoryBasePermissions: 1
+  inventoryEveryOnePermissions: 1
+  salePrice: 1
+  saleType: 1
+  creationDate: 1
+  groupID: MyString
+  groupOwned: 1
+  flags: 1
+  inventoryGroupPermissions: 1
+  avatarID: MyString
+  parentFolderID: MyString

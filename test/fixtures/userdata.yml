@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UserId: MyString
+  TagId: MyString
+  DataKey: MyString
+  DataVal: MyString
+
+two:
+  UserId: MyString
+  TagId: MyString
+  DataKey: MyString
+  DataVal: MyString

@@ -1,0 +1,27 @@
+<%= form_for(estate_group) do |f| %>
+  <% if estate_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estate_group.errors.count, "error") %> prohibited this estate_group from being saved:</h2>
+
+      <ul>
+      <% estate_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :EstateID %>
+    <%= f.number_field :EstateID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :uuid %>
+    <%= f.text_field :uuid %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

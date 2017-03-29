@@ -1,0 +1,2 @@
+module ProfilePicksHelper
+end

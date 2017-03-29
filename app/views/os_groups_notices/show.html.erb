@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Groupid:</strong>
+  <%= @os_groups_notice.GroupID %>
+</p>
+
+<p>
+  <strong>Tmstamp:</strong>
+  <%= @os_groups_notice.TMStamp %>
+</p>
+
+<p>
+  <strong>Fromname:</strong>
+  <%= @os_groups_notice.FromName %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @os_groups_notice.Subject %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @os_groups_notice.Message %>
+</p>
+
+<p>
+  <strong>Hasattachment:</strong>
+  <%= @os_groups_notice.HasAttachment %>
+</p>
+
+<p>
+  <strong>Attachmenttype:</strong>
+  <%= @os_groups_notice.AttachmentType %>
+</p>
+
+<p>
+  <strong>Attachmentname:</strong>
+  <%= @os_groups_notice.AttachmentName %>
+</p>
+
+<p>
+  <strong>Attachmentitemid:</strong>
+  <%= @os_groups_notice.AttachmentItemID %>
+</p>
+
+<p>
+  <strong>Attachmentownerid:</strong>
+  <%= @os_groups_notice.AttachmentOwnerID %>
+</p>
+
+<%= link_to 'Edit', edit_os_groups_notice_path(@os_groups_notice) %> |
+<%= link_to 'Back', os_groups_notices_path %>

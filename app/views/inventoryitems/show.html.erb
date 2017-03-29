@@ -1,0 +1,99 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Assetid:</strong>
+  <%= @inventoryitem.assetID %>
+</p>
+
+<p>
+  <strong>Assettype:</strong>
+  <%= @inventoryitem.assetType %>
+</p>
+
+<p>
+  <strong>Inventoryname:</strong>
+  <%= @inventoryitem.inventoryName %>
+</p>
+
+<p>
+  <strong>Inventorydescription:</strong>
+  <%= @inventoryitem.inventoryDescription %>
+</p>
+
+<p>
+  <strong>Inventorynextpermissions:</strong>
+  <%= @inventoryitem.inventoryNextPermissions %>
+</p>
+
+<p>
+  <strong>Inventorycurrentpermissions:</strong>
+  <%= @inventoryitem.inventoryCurrentPermissions %>
+</p>
+
+<p>
+  <strong>Invtype:</strong>
+  <%= @inventoryitem.invType %>
+</p>
+
+<p>
+  <strong>Creatorid:</strong>
+  <%= @inventoryitem.creatorID %>
+</p>
+
+<p>
+  <strong>Inventorybasepermissions:</strong>
+  <%= @inventoryitem.inventoryBasePermissions %>
+</p>
+
+<p>
+  <strong>Inventoryeveryonepermissions:</strong>
+  <%= @inventoryitem.inventoryEveryOnePermissions %>
+</p>
+
+<p>
+  <strong>Saleprice:</strong>
+  <%= @inventoryitem.salePrice %>
+</p>
+
+<p>
+  <strong>Saletype:</strong>
+  <%= @inventoryitem.saleType %>
+</p>
+
+<p>
+  <strong>Creationdate:</strong>
+  <%= @inventoryitem.creationDate %>
+</p>
+
+<p>
+  <strong>Groupid:</strong>
+  <%= @inventoryitem.groupID %>
+</p>
+
+<p>
+  <strong>Groupowned:</strong>
+  <%= @inventoryitem.groupOwned %>
+</p>
+
+<p>
+  <strong>Flags:</strong>
+  <%= @inventoryitem.flags %>
+</p>
+
+<p>
+  <strong>Inventorygrouppermissions:</strong>
+  <%= @inventoryitem.inventoryGroupPermissions %>
+</p>
+
+<p>
+  <strong>Avatarid:</strong>
+  <%= @inventoryitem.avatarID %>
+</p>
+
+<p>
+  <strong>Parentfolderid:</strong>
+  <%= @inventoryitem.parentFolderID %>
+</p>
+
+<%= link_to 'Edit', edit_inventoryitem_path(@inventoryitem) %> |
+<%= link_to 'Back', inventoryitems_path %>

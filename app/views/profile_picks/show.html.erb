@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Creatoruuid:</strong>
+  <%= @profile_pick.creatoruuid %>
+</p>
+
+<p>
+  <strong>Toppick:</strong>
+  <%= @profile_pick.toppick %>
+</p>
+
+<p>
+  <strong>Parceluuid:</strong>
+  <%= @profile_pick.parceluuid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile_pick.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @profile_pick.description %>
+</p>
+
+<p>
+  <strong>Snapshotuuid:</strong>
+  <%= @profile_pick.snapshotuuid %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @profile_pick.user %>
+</p>
+
+<p>
+  <strong>Originalname:</strong>
+  <%= @profile_pick.originalname %>
+</p>
+
+<p>
+  <strong>Simname:</strong>
+  <%= @profile_pick.simname %>
+</p>
+
+<p>
+  <strong>Posglobal:</strong>
+  <%= @profile_pick.posglobal %>
+</p>
+
+<p>
+  <strong>Sortorder:</strong>
+  <%= @profile_pick.sortorder %>
+</p>
+
+<p>
+  <strong>Enabled:</strong>
+  <%= @profile_pick.enabled %>
+</p>
+
+<%= link_to 'Edit', edit_profile_pick_path(@profile_pick) %> |
+<%= link_to 'Back', profile_picks_path %>

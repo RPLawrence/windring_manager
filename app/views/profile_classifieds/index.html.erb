@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profile Classifieds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Creatoruuid</th>
+      <th>Creationdate</th>
+      <th>Expirationdate</th>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Parceluuid</th>
+      <th>Parentestate</th>
+      <th>Snapshotuuid</th>
+      <th>Simname</th>
+      <th>Posglobal</th>
+      <th>Parcelname</th>
+      <th>Classifiedflags</th>
+      <th>Priceforlisting</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profile_classifieds.each do |profile_classified| %>
+      <tr>
+        <td><%= profile_classified.creatoruuid %></td>
+        <td><%= profile_classified.creationdate %></td>
+        <td><%= profile_classified.expirationdate %></td>
+        <td><%= profile_classified.category %></td>
+        <td><%= profile_classified.name %></td>
+        <td><%= profile_classified.description %></td>
+        <td><%= profile_classified.parceluuid %></td>
+        <td><%= profile_classified.parentestate %></td>
+        <td><%= profile_classified.snapshotuuid %></td>
+        <td><%= profile_classified.simname %></td>
+        <td><%= profile_classified.posglobal %></td>
+        <td><%= profile_classified.parcelname %></td>
+        <td><%= profile_classified.classifiedflags %></td>
+        <td><%= profile_classified.priceforlisting %></td>
+        <td><%= link_to 'Show', profile_classified %></td>
+        <td><%= link_to 'Edit', edit_profile_classified_path(profile_classified) %></td>
+        <td><%= link_to 'Destroy', profile_classified, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profile Classified', new_profile_classified_path %>

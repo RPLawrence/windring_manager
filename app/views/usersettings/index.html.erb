@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usersettings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imviaemail</th>
+      <th>Visible</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usersettings.each do |usersetting| %>
+      <tr>
+        <td><%= usersetting.imviaemail %></td>
+        <td><%= usersetting.visible %></td>
+        <td><%= usersetting.email %></td>
+        <td><%= link_to 'Show', usersetting %></td>
+        <td><%= link_to 'Edit', edit_usersetting_path(usersetting) %></td>
+        <td><%= link_to 'Destroy', usersetting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usersetting', new_usersetting_path %>

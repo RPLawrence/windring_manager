@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Userprofiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profilepartner</th>
+      <th>Profileallowpublish</th>
+      <th>Profilematurepublish</th>
+      <th>Profileurl</th>
+      <th>Profilewanttomask</th>
+      <th>Profilewanttotext</th>
+      <th>Profileskillsmask</th>
+      <th>Profileskillstext</th>
+      <th>Profilelanguages</th>
+      <th>Profileimage</th>
+      <th>Profileabouttext</th>
+      <th>Profilefirstimage</th>
+      <th>Profilefirsttext</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @userprofiles.each do |userprofile| %>
+      <tr>
+        <td><%= userprofile.profilePartner %></td>
+        <td><%= userprofile.profileAllowPublish %></td>
+        <td><%= userprofile.profileMaturePublish %></td>
+        <td><%= userprofile.profileURL %></td>
+        <td><%= userprofile.profileWantToMask %></td>
+        <td><%= userprofile.profileWantToText %></td>
+        <td><%= userprofile.profileSkillsMask %></td>
+        <td><%= userprofile.profileSkillsText %></td>
+        <td><%= userprofile.profileLanguages %></td>
+        <td><%= userprofile.profileImage %></td>
+        <td><%= userprofile.profileAboutText %></td>
+        <td><%= userprofile.profileFirstImage %></td>
+        <td><%= userprofile.profileFirstText %></td>
+        <td><%= link_to 'Show', userprofile %></td>
+        <td><%= link_to 'Edit', edit_userprofile_path(userprofile) %></td>
+        <td><%= link_to 'Destroy', userprofile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Userprofile', new_userprofile_path %>

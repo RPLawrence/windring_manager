@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @hg_traveling_datum.UserID %>
+</p>
+
+<p>
+  <strong>Gridexternalname:</strong>
+  <%= @hg_traveling_datum.GridExternalName %>
+</p>
+
+<p>
+  <strong>Servicetoken:</strong>
+  <%= @hg_traveling_datum.ServiceToken %>
+</p>
+
+<p>
+  <strong>Clientipaddress:</strong>
+  <%= @hg_traveling_datum.ClientIPAddress %>
+</p>
+
+<p>
+  <strong>Myipaddress:</strong>
+  <%= @hg_traveling_datum.MyIPAddress %>
+</p>
+
+<p>
+  <strong>Tmstamp:</strong>
+  <%= @hg_traveling_datum.TMStamp %>
+</p>
+
+<%= link_to 'Edit', edit_hg_traveling_datum_path(@hg_traveling_datum) %> |
+<%= link_to 'Back', hg_traveling_data_path %>

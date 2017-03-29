@@ -1,0 +1,227 @@
+<%= form_for(land) do |f| %>
+  <% if land.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(land.errors.count, "error") %> prohibited this land from being saved:</h2>
+
+      <ul>
+      <% land.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :RegionUUID %>
+    <%= f.text_field :RegionUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LocalLandID %>
+    <%= f.number_field :LocalLandID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Bitmap %>
+    <%= f.text_field :Bitmap %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Description %>
+    <%= f.text_field :Description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OwnerUUID %>
+    <%= f.text_field :OwnerUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :IsGroupOwned %>
+    <%= f.number_field :IsGroupOwned %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Area %>
+    <%= f.number_field :Area %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AuctionID %>
+    <%= f.number_field :AuctionID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Category %>
+    <%= f.number_field :Category %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ClaimDate %>
+    <%= f.number_field :ClaimDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ClaimPrice %>
+    <%= f.number_field :ClaimPrice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupUUID %>
+    <%= f.text_field :GroupUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SalePrice %>
+    <%= f.number_field :SalePrice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LandStatus %>
+    <%= f.number_field :LandStatus %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LandFlags %>
+    <%= f.number_field :LandFlags %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LandingType %>
+    <%= f.number_field :LandingType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaAutoScale %>
+    <%= f.number_field :MediaAutoScale %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaTextureUUID %>
+    <%= f.text_field :MediaTextureUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaURL %>
+    <%= f.text_field :MediaURL %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MusicURL %>
+    <%= f.text_field :MusicURL %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PassHours %>
+    <%= f.text_field :PassHours %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PassPrice %>
+    <%= f.number_field :PassPrice %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SnapshotUUID %>
+    <%= f.text_field :SnapshotUUID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLocationX %>
+    <%= f.text_field :UserLocationX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLocationY %>
+    <%= f.text_field :UserLocationY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLocationZ %>
+    <%= f.text_field :UserLocationZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLookAtX %>
+    <%= f.text_field :UserLookAtX %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLookAtY %>
+    <%= f.text_field :UserLookAtY %>
+  </div>
+
+  <div class="field">
+    <%= f.label :UserLookAtZ %>
+    <%= f.text_field :UserLookAtZ %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AuthbuyerID %>
+    <%= f.text_field :AuthbuyerID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OtherCleanTime %>
+    <%= f.number_field :OtherCleanTime %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Dwell %>
+    <%= f.number_field :Dwell %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaType %>
+    <%= f.text_field :MediaType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaDescription %>
+    <%= f.text_field :MediaDescription %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaSize %>
+    <%= f.text_field :MediaSize %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MediaLoop %>
+    <%= f.check_box :MediaLoop %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ObscureMusic %>
+    <%= f.check_box :ObscureMusic %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ObscureMedia %>
+    <%= f.check_box :ObscureMedia %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SeeAVs %>
+    <%= f.number_field :SeeAVs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AnyAVSounds %>
+    <%= f.number_field :AnyAVSounds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :GroupAVSounds %>
+    <%= f.number_field :GroupAVSounds %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hg Traveling Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Gridexternalname</th>
+      <th>Servicetoken</th>
+      <th>Clientipaddress</th>
+      <th>Myipaddress</th>
+      <th>Tmstamp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hg_traveling_data.each do |hg_traveling_datum| %>
+      <tr>
+        <td><%= hg_traveling_datum.UserID %></td>
+        <td><%= hg_traveling_datum.GridExternalName %></td>
+        <td><%= hg_traveling_datum.ServiceToken %></td>
+        <td><%= hg_traveling_datum.ClientIPAddress %></td>
+        <td><%= hg_traveling_datum.MyIPAddress %></td>
+        <td><%= hg_traveling_datum.TMStamp %></td>
+        <td><%= link_to 'Show', hg_traveling_datum %></td>
+        <td><%= link_to 'Edit', edit_hg_traveling_datum_path(hg_traveling_datum) %></td>
+        <td><%= link_to 'Destroy', hg_traveling_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hg Traveling Datum', new_hg_traveling_datum_path %>

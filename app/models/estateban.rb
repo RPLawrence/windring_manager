@@ -1,0 +1,2 @@
+class Estateban < ApplicationRecord
+end

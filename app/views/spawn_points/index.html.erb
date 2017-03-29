@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Spawn Points</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regionid</th>
+      <th>Yaw</th>
+      <th>Pitch</th>
+      <th>Distance</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @spawn_points.each do |spawn_point| %>
+      <tr>
+        <td><%= spawn_point.RegionID %></td>
+        <td><%= spawn_point.Yaw %></td>
+        <td><%= spawn_point.Pitch %></td>
+        <td><%= spawn_point.Distance %></td>
+        <td><%= link_to 'Show', spawn_point %></td>
+        <td><%= link_to 'Edit', edit_spawn_point_path(spawn_point) %></td>
+        <td><%= link_to 'Destroy', spawn_point, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Spawn Point', new_spawn_point_path %>

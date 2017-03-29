@@ -1,0 +1,32 @@
+<%= form_for(usersetting) do |f| %>
+  <% if usersetting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usersetting.errors.count, "error") %> prohibited this usersetting from being saved:</h2>
+
+      <ul>
+      <% usersetting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :imviaemail %>
+    <%= f.text_field :imviaemail %>
+  </div>
+
+  <div class="field">
+    <%= f.label :visible %>
+    <%= f.text_field :visible %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

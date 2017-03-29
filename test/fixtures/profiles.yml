@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profilePartner: MyString
+  profileAllowPublish: 
+  profileMaturePublish: 
+  profileURL: MyString
+  profileWantToMask: 1
+  profileWantToText: MyText
+  profileSkillsMask: 1
+  profileSkillsText: MyText
+  profileLanguages: MyText
+  profileImage: MyString
+  profileAboutText: MyText
+  profileFirstImage: MyString
+  profileFirstText: MyText
+
+two:
+  profilePartner: MyString
+  profileAllowPublish: 
+  profileMaturePublish: 
+  profileURL: MyString
+  profileWantToMask: 1
+  profileWantToText: MyText
+  profileSkillsMask: 1
+  profileSkillsText: MyText
+  profileLanguages: MyText
+  profileImage: MyString
+  profileAboutText: MyText
+  profileFirstImage: MyString
+  profileFirstText: MyText

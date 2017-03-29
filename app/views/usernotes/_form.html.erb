@@ -1,0 +1,32 @@
+<%= form_for(usernote) do |f| %>
+  <% if usernote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usernote.errors.count, "error") %> prohibited this usernote from being saved:</h2>
+
+      <ul>
+      <% usernote.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :useruuid %>
+    <%= f.text_field :useruuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :targetuuid %>
+    <%= f.text_field :targetuuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :notes %>
+    <%= f.text_area :notes %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

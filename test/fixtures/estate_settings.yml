@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EstateName: MyString
+  AbuseEmailToEstateOwner: 1
+  DenyAnonymous: 1
+  ResetHomeOnTeleport: 1
+  FixedSun: 1
+  DenyTransacted: 1
+  BlockDwell: 1
+  DenyIdentified: 1
+  AllowVoice: 1
+  UseGlobalTime: 1
+  PricePerMeter: 1
+  TaxFree: 1
+  AllowDirectTeleport: 1
+  RedirectGridX: 1
+  RedirectGridY: 1
+  ParentEstateID: 1
+  SunPosition: 1.5
+  EstateSkipScripts: 1
+  BillableFactor: 1.5
+  PublicAccess: 1
+  AbuseEmail: MyString
+  EstateOwner: MyString
+  DenyMinors: 1
+  AllowLandmark: 1
+  AllowParcelChanges: 1
+  AllowSetHome: 1
+
+two:
+  EstateName: MyString
+  AbuseEmailToEstateOwner: 1
+  DenyAnonymous: 1
+  ResetHomeOnTeleport: 1
+  FixedSun: 1
+  DenyTransacted: 1
+  BlockDwell: 1
+  DenyIdentified: 1
+  AllowVoice: 1
+  UseGlobalTime: 1
+  PricePerMeter: 1
+  TaxFree: 1
+  AllowDirectTeleport: 1
+  RedirectGridX: 1
+  RedirectGridY: 1
+  ParentEstateID: 1
+  SunPosition: 1.5
+  EstateSkipScripts: 1
+  BillableFactor: 1.5
+  PublicAccess: 1
+  AbuseEmail: MyString
+  EstateOwner: MyString
+  DenyMinors: 1
+  AllowLandmark: 1
+  AllowParcelChanges: 1
+  AllowSetHome: 1

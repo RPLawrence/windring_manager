@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  assetType: 1
+  local: false
+  temporary: false
+  data: 
+  create_time: 1
+  access_time: 1
+  asset_flags: 1
+  CreatorID: MyString
+
+two:
+  name: MyString
+  description: MyString
+  assetType: 1
+  local: false
+  temporary: false
+  data: 
+  create_time: 1
+  access_time: 1
+  asset_flags: 1
+  CreatorID: MyString

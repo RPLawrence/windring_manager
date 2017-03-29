@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regionid:</strong>
+  <%= @spawn_point.RegionID %>
+</p>
+
+<p>
+  <strong>Yaw:</strong>
+  <%= @spawn_point.Yaw %>
+</p>
+
+<p>
+  <strong>Pitch:</strong>
+  <%= @spawn_point.Pitch %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @spawn_point.Distance %>
+</p>
+
+<%= link_to 'Edit', edit_spawn_point_path(@spawn_point) %> |
+<%= link_to 'Back', spawn_points_path %>

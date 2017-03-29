@@ -1,0 +1,2 @@
+class ProfilePick < ApplicationRecord
+end

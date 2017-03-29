@@ -1,0 +1,37 @@
+<%= form_for(os_groups_invite) do |f| %>
+  <% if os_groups_invite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(os_groups_invite.errors.count, "error") %> prohibited this os_groups_invite from being saved:</h2>
+
+      <ul>
+      <% os_groups_invite.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :GroupID %>
+    <%= f.text_field :GroupID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RoleID %>
+    <%= f.text_field :RoleID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PrincipalID %>
+    <%= f.text_field :PrincipalID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TMStamp %>
+    <%= f.datetime_select :TMStamp %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

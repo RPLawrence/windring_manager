@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  HomeRegionID: MyString
+  HomePosition: MyString
+  HomeLookAt: MyString
+  LastRegionID: MyString
+  LastPosition: MyString
+  LastLookAt: MyString
+  Online: MyString
+  Login: MyString
+  Logout: MyString
+
+two:
+  HomeRegionID: MyString
+  HomePosition: MyString
+  HomeLookAt: MyString
+  LastRegionID: MyString
+  LastPosition: MyString
+  LastLookAt: MyString
+  Online: MyString
+  Login: MyString
+  Logout: MyString

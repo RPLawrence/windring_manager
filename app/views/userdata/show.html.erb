@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @userdatum.UserId %>
+</p>
+
+<p>
+  <strong>Tagid:</strong>
+  <%= @userdatum.TagId %>
+</p>
+
+<p>
+  <strong>Datakey:</strong>
+  <%= @userdatum.DataKey %>
+</p>
+
+<p>
+  <strong>Dataval:</strong>
+  <%= @userdatum.DataVal %>
+</p>
+
+<%= link_to 'Edit', edit_userdatum_path(@userdatum) %> |
+<%= link_to 'Back', userdata_path %>

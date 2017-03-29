@@ -1,0 +1,211 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prims</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Creationdate</th>
+      <th>Name</th>
+      <th>Text</th>
+      <th>Description</th>
+      <th>Sitname</th>
+      <th>Touchname</th>
+      <th>Objectflags</th>
+      <th>Ownermask</th>
+      <th>Nextownermask</th>
+      <th>Groupmask</th>
+      <th>Everyonemask</th>
+      <th>Basemask</th>
+      <th>Positionx</th>
+      <th>Positiony</th>
+      <th>Positionz</th>
+      <th>Grouppositionx</th>
+      <th>Grouppositiony</th>
+      <th>Grouppositionz</th>
+      <th>Velocityx</th>
+      <th>Velocityy</th>
+      <th>Velocityz</th>
+      <th>Angularvelocityx</th>
+      <th>Angularvelocityy</th>
+      <th>Angularvelocityz</th>
+      <th>Accelerationx</th>
+      <th>Accelerationy</th>
+      <th>Accelerationz</th>
+      <th>Rotationx</th>
+      <th>Rotationy</th>
+      <th>Rotationz</th>
+      <th>Rotationw</th>
+      <th>Sittargetoffsetx</th>
+      <th>Sittargetoffsety</th>
+      <th>Sittargetoffsetz</th>
+      <th>Sittargetorientw</th>
+      <th>Sittargetorientx</th>
+      <th>Sittargetorienty</th>
+      <th>Sittargetorientz</th>
+      <th>Regionuuid</th>
+      <th>Creatorid</th>
+      <th>Ownerid</th>
+      <th>Groupid</th>
+      <th>Lastownerid</th>
+      <th>Scenegroupid</th>
+      <th>Payprice</th>
+      <th>Paybutton1</th>
+      <th>Paybutton2</th>
+      <th>Paybutton3</th>
+      <th>Paybutton4</th>
+      <th>Loopedsound</th>
+      <th>Loopedsoundgain</th>
+      <th>Textureanimation</th>
+      <th>Omegax</th>
+      <th>Omegay</th>
+      <th>Omegaz</th>
+      <th>Cameraeyeoffsetx</th>
+      <th>Cameraeyeoffsety</th>
+      <th>Cameraeyeoffsetz</th>
+      <th>Cameraatoffsetx</th>
+      <th>Cameraatoffsety</th>
+      <th>Cameraatoffsetz</th>
+      <th>Forcemouselook</th>
+      <th>Scriptaccesspin</th>
+      <th>Alloweddrop</th>
+      <th>Dieatedge</th>
+      <th>Saleprice</th>
+      <th>Saletype</th>
+      <th>Colorr</th>
+      <th>Colorg</th>
+      <th>Colorb</th>
+      <th>Colora</th>
+      <th>Particlesystem</th>
+      <th>Clickaction</th>
+      <th>Material</th>
+      <th>Collisionsound</th>
+      <th>Collisionsoundvolume</th>
+      <th>Linknumber</th>
+      <th>Passtouches</th>
+      <th>Mediaurl</th>
+      <th>Dynattrs</th>
+      <th>Physicsshapetype</th>
+      <th>Density</th>
+      <th>Gravitymodifier</th>
+      <th>Friction</th>
+      <th>Restitution</th>
+      <th>Keyframemotion</th>
+      <th>Attachedposx</th>
+      <th>Attachedposy</th>
+      <th>Attachedposz</th>
+      <th>Passcollisions</th>
+      <th>Vehicle</th>
+      <th>Rotationaxislocks</th>
+      <th>Rezzerid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prims.each do |prim| %>
+      <tr>
+        <td><%= prim.CreationDate %></td>
+        <td><%= prim.Name %></td>
+        <td><%= prim.Text %></td>
+        <td><%= prim.Description %></td>
+        <td><%= prim.SitName %></td>
+        <td><%= prim.TouchName %></td>
+        <td><%= prim.ObjectFlags %></td>
+        <td><%= prim.OwnerMask %></td>
+        <td><%= prim.NextOwnerMask %></td>
+        <td><%= prim.GroupMask %></td>
+        <td><%= prim.EveryoneMask %></td>
+        <td><%= prim.BaseMask %></td>
+        <td><%= prim.PositionX %></td>
+        <td><%= prim.PositionY %></td>
+        <td><%= prim.PositionZ %></td>
+        <td><%= prim.GroupPositionX %></td>
+        <td><%= prim.GroupPositionY %></td>
+        <td><%= prim.GroupPositionZ %></td>
+        <td><%= prim.VelocityX %></td>
+        <td><%= prim.VelocityY %></td>
+        <td><%= prim.VelocityZ %></td>
+        <td><%= prim.AngularVelocityX %></td>
+        <td><%= prim.AngularVelocityY %></td>
+        <td><%= prim.AngularVelocityZ %></td>
+        <td><%= prim.AccelerationX %></td>
+        <td><%= prim.AccelerationY %></td>
+        <td><%= prim.AccelerationZ %></td>
+        <td><%= prim.RotationX %></td>
+        <td><%= prim.RotationY %></td>
+        <td><%= prim.RotationZ %></td>
+        <td><%= prim.RotationW %></td>
+        <td><%= prim.SitTargetOffsetX %></td>
+        <td><%= prim.SitTargetOffsetY %></td>
+        <td><%= prim.SitTargetOffsetZ %></td>
+        <td><%= prim.SitTargetOrientW %></td>
+        <td><%= prim.SitTargetOrientX %></td>
+        <td><%= prim.SitTargetOrientY %></td>
+        <td><%= prim.SitTargetOrientZ %></td>
+        <td><%= prim.RegionUUID %></td>
+        <td><%= prim.CreatorID %></td>
+        <td><%= prim.OwnerID %></td>
+        <td><%= prim.GroupID %></td>
+        <td><%= prim.LastOwnerID %></td>
+        <td><%= prim.SceneGroupID %></td>
+        <td><%= prim.PayPrice %></td>
+        <td><%= prim.PayButton1 %></td>
+        <td><%= prim.PayButton2 %></td>
+        <td><%= prim.PayButton3 %></td>
+        <td><%= prim.PayButton4 %></td>
+        <td><%= prim.LoopedSound %></td>
+        <td><%= prim.LoopedSoundGain %></td>
+        <td><%= prim.TextureAnimation %></td>
+        <td><%= prim.OmegaX %></td>
+        <td><%= prim.OmegaY %></td>
+        <td><%= prim.OmegaZ %></td>
+        <td><%= prim.CameraEyeOffsetX %></td>
+        <td><%= prim.CameraEyeOffsetY %></td>
+        <td><%= prim.CameraEyeOffsetZ %></td>
+        <td><%= prim.CameraAtOffsetX %></td>
+        <td><%= prim.CameraAtOffsetY %></td>
+        <td><%= prim.CameraAtOffsetZ %></td>
+        <td><%= prim.ForceMouselook %></td>
+        <td><%= prim.ScriptAccessPin %></td>
+        <td><%= prim.AllowedDrop %></td>
+        <td><%= prim.DieAtEdge %></td>
+        <td><%= prim.SalePrice %></td>
+        <td><%= prim.SaleType %></td>
+        <td><%= prim.ColorR %></td>
+        <td><%= prim.ColorG %></td>
+        <td><%= prim.ColorB %></td>
+        <td><%= prim.ColorA %></td>
+        <td><%= prim.ParticleSystem %></td>
+        <td><%= prim.ClickAction %></td>
+        <td><%= prim.Material %></td>
+        <td><%= prim.CollisionSound %></td>
+        <td><%= prim.CollisionSoundVolume %></td>
+        <td><%= prim.LinkNumber %></td>
+        <td><%= prim.PassTouches %></td>
+        <td><%= prim.MediaURL %></td>
+        <td><%= prim.DynAttrs %></td>
+        <td><%= prim.PhysicsShapeType %></td>
+        <td><%= prim.Density %></td>
+        <td><%= prim.GravityModifier %></td>
+        <td><%= prim.Friction %></td>
+        <td><%= prim.Restitution %></td>
+        <td><%= prim.KeyframeMotion %></td>
+        <td><%= prim.AttachedPosX %></td>
+        <td><%= prim.AttachedPosY %></td>
+        <td><%= prim.AttachedPosZ %></td>
+        <td><%= prim.PassCollisions %></td>
+        <td><%= prim.Vehicle %></td>
+        <td><%= prim.RotationAxisLocks %></td>
+        <td><%= prim.RezzerID %></td>
+        <td><%= link_to 'Show', prim %></td>
+        <td><%= link_to 'Edit', edit_prim_path(prim) %></td>
+        <td><%= link_to 'Destroy', prim, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prim', new_prim_path %>

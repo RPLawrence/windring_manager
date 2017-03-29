@@ -1,0 +1,72 @@
+<%= form_for(os_groups_group) do |f| %>
+  <% if os_groups_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(os_groups_group.errors.count, "error") %> prohibited this os_groups_group from being saved:</h2>
+
+      <ul>
+      <% os_groups_group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Location %>
+    <%= f.text_field :Location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Charter %>
+    <%= f.text_area :Charter %>
+  </div>
+
+  <div class="field">
+    <%= f.label :InsigniaID %>
+    <%= f.text_field :InsigniaID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FounderID %>
+    <%= f.text_field :FounderID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MembershipFee %>
+    <%= f.number_field :MembershipFee %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OpenEnrollment %>
+    <%= f.text_field :OpenEnrollment %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ShowInList %>
+    <%= f.number_field :ShowInList %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AllowPublish %>
+    <%= f.number_field :AllowPublish %>
+  </div>
+
+  <div class="field">
+    <%= f.label :MaturePublish %>
+    <%= f.number_field :MaturePublish %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OwnerRoleID %>
+    <%= f.text_field :OwnerRoleID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

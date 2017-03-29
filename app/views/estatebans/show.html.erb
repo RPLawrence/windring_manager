@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estateid:</strong>
+  <%= @estateban.EstateID %>
+</p>
+
+<p>
+  <strong>Banneduuid:</strong>
+  <%= @estateban.bannedUUID %>
+</p>
+
+<p>
+  <strong>Bannedip:</strong>
+  <%= @estateban.bannedIp %>
+</p>
+
+<p>
+  <strong>Bannediphostmask:</strong>
+  <%= @estateban.bannedIpHostMask %>
+</p>
+
+<p>
+  <strong>Bannednamemask:</strong>
+  <%= @estateban.bannedNameMask %>
+</p>
+
+<%= link_to 'Edit', edit_estateban_path(@estateban) %> |
+<%= link_to 'Back', estatebans_path %>

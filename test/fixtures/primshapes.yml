@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Shape: 1
+  ScaleX: 1.5
+  ScaleY: 1.5
+  ScaleZ: 1.5
+  PCode: 1
+  PathBegin: 1
+  PathEnd: 1
+  PathScaleX: 1
+  PathScaleY: 1
+  PathShearX: 1
+  PathShearY: 1
+  PathSkew: 1
+  PathCurve: 1
+  PathRadiusOffset: 1
+  PathRevolutions: 1
+  PathTaperX: 1
+  PathTaperY: 1
+  PathTwist: 1
+  PathTwistBegin: 1
+  ProfileBegin: 1
+  ProfileEnd: 1
+  ProfileCurve: 1
+  ProfileHollow: 1
+  State: 1
+  Texture: 
+  ExtraParams: 
+  Media: MyText
+  LastAttachPoint: 1
+
+two:
+  Shape: 1
+  ScaleX: 1.5
+  ScaleY: 1.5
+  ScaleZ: 1.5
+  PCode: 1
+  PathBegin: 1
+  PathEnd: 1
+  PathScaleX: 1
+  PathScaleY: 1
+  PathShearX: 1
+  PathShearY: 1
+  PathSkew: 1
+  PathCurve: 1
+  PathRadiusOffset: 1
+  PathRevolutions: 1
+  PathTaperX: 1
+  PathTaperY: 1
+  PathTwist: 1
+  PathTwistBegin: 1
+  ProfileBegin: 1
+  ProfileEnd: 1
+  ProfileCurve: 1
+  ProfileHollow: 1
+  State: 1
+  Texture: 
+  ExtraParams: 
+  Media: MyText
+  LastAttachPoint: 1

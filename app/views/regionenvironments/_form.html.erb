@@ -1,0 +1,22 @@
+<%= form_for(regionenvironment) do |f| %>
+  <% if regionenvironment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(regionenvironment.errors.count, "error") %> prohibited this regionenvironment from being saved:</h2>
+
+      <ul>
+      <% regionenvironment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :llsd_settings %>
+    <%= f.text_area :llsd_settings %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module UserpicksHelper
+end

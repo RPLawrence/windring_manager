@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Principalid:</strong>
+  <%= @user_account.PrincipalID %>
+</p>
+
+<p>
+  <strong>Scopeid:</strong>
+  <%= @user_account.ScopeID %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @user_account.FirstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @user_account.LastName %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_account.Email %>
+</p>
+
+<p>
+  <strong>Serviceurls:</strong>
+  <%= @user_account.ServiceURLs %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @user_account.Created %>
+</p>
+
+<p>
+  <strong>Userlevel:</strong>
+  <%= @user_account.UserLevel %>
+</p>
+
+<p>
+  <strong>Userflags:</strong>
+  <%= @user_account.UserFlags %>
+</p>
+
+<p>
+  <strong>Usertitle:</strong>
+  <%= @user_account.UserTitle %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @user_account.active %>
+</p>
+
+<%= link_to 'Edit', edit_user_account_path(@user_account) %> |
+<%= link_to 'Back', user_accounts_path %>

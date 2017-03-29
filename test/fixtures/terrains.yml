@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RegionUUID: MyString
+  Revision: 1
+  Heightfield: 
+
+two:
+  RegionUUID: MyString
+  Revision: 1
+  Heightfield: 

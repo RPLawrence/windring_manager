@@ -1,0 +1,2 @@
+class EstateManager < ApplicationRecord
+end

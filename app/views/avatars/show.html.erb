@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Principalid:</strong>
+  <%= @avatar.PrincipalID %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @avatar.Name %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @avatar.Value %>
+</p>
+
+<%= link_to 'Edit', edit_avatar_path(@avatar) %> |
+<%= link_to 'Back', avatars_path %>
