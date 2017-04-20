@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :wi_offline_msgs
+# resources :wi_offline_msgs
   resources :usersettings
   resources :userprofiles
   resources :userpicks

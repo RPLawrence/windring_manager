@@ -1,3 +1,11 @@
+# == Schema Information
+#
+# Table name: migrations
+#
+#  name    :string(100)
+#  version :integer
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
