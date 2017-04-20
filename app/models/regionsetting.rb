@@ -50,5 +50,5 @@
 #
 
 class Regionsetting < ApplicationRecord
-  belongs_to :loaded_creation
+#  belongs_to :loaded_creation
 end
